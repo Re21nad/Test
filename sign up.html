@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100vh;
+            background: #f0e8e2;
+
+        }
+
+        .txt1 {
+            color: #6f2b25;
+            font-size: 30px;
+            position: absolute;
+            top: 30%;
+            right: 12%;
+
+
+        }
+
+        .txt11 {
+            color: #6f2b25;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            right: 16%;
+
+
+        }
+
+        .txt2 {
+            position: absolute;
+            color: #c0c0c0;
+            font-size: 10px;
+            top: 83%;
+            right: 69%;
+
+
+        }
+
+        .txt2 h2 {
+            font-size: 0.5em;
+        }
+
+        .txt1 h1 {
+            text-align: center;
+        }
+
+        .txt11 h11 {
+            text-align: center;
+        }
+
+        .s1 input[type="submit"] {
+            width: 15%;
+            padding: 10px;
+            position: absolute;
+            top: 58%;
+            right: 15%;
+            background: #e6d9d0;
+            color: #ca7062;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 3px solid #ca7062;
+
+        }
+
+        .s1 input[type="submit"]:hover {
+            background: #f0e8e2;
+            color: #f0e8e2;
+            border: 3px solid #f0e8e2;
+        }
+
+        .c1 {
+
+            display: block;
+            position: absolute;
+            top: 93%;
+            right: 80%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            background: #e6d9d0;
+            border-radius: 50%;
+
+
+        }
+
+        .c2 {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 93%;
+            right: 73.75%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            background: #e6d9d0;
+            border-radius: 50%;
+
+        }
+
+        .c3 {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 93%;
+            right: 67%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 35px;
+            background: #e6d9d0;
+            border-radius: 50%;
+
+        }
+
+        .shape {
+            width: 50%;
+            height: 100%;
+            margin-left: auto;
+            background-color: #e6d9d0;
+            transition: transform 1s;
+        }
+
+        .img1 {
+            position: absolute;
+            top: 50%;
+            right: 43.75%;
+            border-radius: 4px;
+            width: 80px;
+        }
+
+        .img2 {
+            position: absolute;
+            top: -1%;
+            left: 93.5%;
+            transform: rotate(180deg);
+            border-radius: 4px;
+            width: 80px;
+        }
+
+        .move-to-right {
+            transform: translateX(-100%);
+        }
+
+        .move-to-right1 {
+            transform: translateX(-1700%);
+        }
+
+
+
+
+        .signin-container {
+            position: absolute;
+            padding: 20px;
+            right: 55%;
+            width: 550px;
+            margin-left: 100px;
+        }
+
+        .signin-container h1 {
+            left: 40%;
+            top: 50%;
+            text-align: center;
+            color: #6f2b25;
+        }
+
+        .signin-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .signin-container input[type="text"],
+        .signin-container input[type="email"],
+        .signin-container input[type="password"] {
+            width: 60%;
+            padding: 10px;
+            position: relative;
+            background: #e6d9d0;
+            left: 20%;
+            border: 1px solid #AAc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            background-repeat: no-repeat;
+            background-position: 5px center;
+            background-size: 20px;
+        }
+
+        .signin-container input[type="text"] {
+            background-image: url("C:/Users/waadb/Downloads/Untitled design (62).png");
+        }
+
+        .signin-container input[type="email"] {
+            background-image: url("C:/Users/waadb/Downloads/Untitled design (55).png");
+        }
+
+        .signin-container input[type="password"] {
+            background-image: url("C:/Users/waadb/Downloads/Untitled design (58).png");
+        }
+
+        .signin-container input[type="submit"] {
+            width: 40%;
+            padding: 10px;
+            position: relative;
+            left: 35%;
+            background: #ca7062;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        .signin-container input[type="submit"]:hover {
+            background: #e6d9d0;
+        }
+
+        .forgot-password {
+            position: relative;
+
+            left: 5%;
+            text-align: center;
+            margin-top: 10px;
+            color: #6f2b25;
+
+
+        }
+
+        .signin-container h2 {
+
+            position: relative;
+            left: 40%;
+            color: #c0c0c0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+<div class="shape">
+
+<img src="C:\Users\waadb\Downloads\Untitled design (54).png" class="img1">
+<img src="C:\Users\waadb\Downloads\Untitled design (54).png" class="img2">
+</div>
+<div class="txt1">
+    <h1>Welcome !</h1>
+</div>
+<div class="txt11">
+    <h11>Already A Member?</h11>
+</div>
+
+<div class="txt2">
+    <h1>_______ or _______</h1>
+</div>
+
+<a href="https://www.twitter.com" target="_blank">
+    <img src="C:\Users\waadb\Downloads\Untitled design (59).png" alt="Twitter" class="c1">
+</a>
+
+<a href="https://www.facebook.com" target="_blank">
+    <img src="C:\Users\waadb\Downloads\Untitled design (61).png" alt="Facebook" class="c2"></a>
+<a href="https://www.google.com" target="_blank">
+    <img src="C:\Users\waadb\Downloads\Untitled design (60).png" alt="Google" class="c3">
+</a>
+
+<div class="s1"><input type="submit" value="Sign In" onclick="moveShape()"></div>
+
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false; // Prevent form submission
+            }
+
+            // If passwords match, the form will be submitted
+            return true;
+        }
+
+
+        function moveShape() {
+            const shapeElement = document.querySelector('.shape');
+            shapeElement.classList.add('move-to-right');
+            const shapeElement1 = document.querySelector('.img1');
+            shapeElement1.classList.add('move-to-right1');
+
+            const shapeElement12 = document.querySelector('.img2');
+            shapeElement12.classList.add('move-to-right1');
+
+            const shapeElement3 = document.querySelector('.txt1');
+            shapeElement3.classList.add('move-to-right1');
+            const shapeElement4 = document.querySelector('.txt11');
+            shapeElement4.classList.add('move-to-right1');
+
+            const shapeElement44 = document.querySelector('.txt2');
+            shapeElement44.classList.add('move-to-right1');
+            const shapeElement5 = document.querySelector('.signin-container');
+            shapeElement5.classList.add('move-to-right1');
+            const shapeElement7 = document.querySelector('.c1');
+            shapeElement7.classList.add('move-to-right1');
+            const shapeElement8 = document.querySelector('.c2');
+            shapeElement8.classList.add('move-to-right1');
+            const shapeElement9 = document.querySelector('.c3');
+            shapeElement9.classList.add('move-to-right1');
+
+            setTimeout(function () {
+                window.location.href = "sign in page.html"; // Replace with your target page's name
+            }, 900); 
+        }
+    </script>
+
+
+    <div class="signin-container">
+        <h1>Sign Up</h1>
+        <form action="/login" method="post" onsubmit="return validateForm()">
+            <!-- Replace the labels with placeholders -->
+            <input type="text" id="name" name="name" placeholder="name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password"
+                required>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="forgot-password">
+            <a href="/forgot password" style="color: #6f2b25;">Forgot Password?</a>
+        </div>
+
+</body>
+
+</html>
