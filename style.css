@@ -155,7 +155,7 @@ header .line img{
     color: var(--text);
     font-size: 18px;
     font-weight: 600;
-    padding: 10px 60px; /* Adjust the top and bottom padding as needed */
+    padding: 10px 55px; /* Adjust the top and bottom padding as needed */
     margin-right: 30px;
 }
 
@@ -265,6 +265,7 @@ header .line img{
 }
 
 /*.................... Information (About Us) ...................*/
+
 .AboutUs .about_information{
     width: 40%;
     margin-top: 10%;
@@ -328,6 +329,150 @@ header .line img{
     margin-left: 55%;
 }
 
+/* .AboutUs .about_information{
+    width: 40%;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+/* The heading and text*/
+
+.AboutUs .about_information .GS h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 7%;
+    margin-left: 4%;
+}
+
+.AboutUs .about_information .GS .text{
+    font-size: 17px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-left: 5%;
+    color: var(--text);
+}
+
+.AboutUs .about_information .GS{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 3s;
+    filter: blur(5px);
+}
+
+.AboutUs.show-animate .about_information .GS{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.AboutUs .about_information .GS .GS_1{
+    display: flex;
+}
+
+.AboutUs .about_information .GS .GS_1 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.3s ease;
+}
+
+.AboutUs .about_information .GS_{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 3.5s;
+    filter: blur(5px);
+}
+
+.AboutUs.show-animate .about_information .GS_{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.AboutUs .about_information .GS_ .GS_2{
+    display: flex;
+    margin-left: 50%;
+}
+
+.AboutUs .about_information .GS_ .GS_2 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.3s ease;
+}
+
+.AboutUs .about_information .GS_ h4{
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 14%;
+    margin-right: 10%;
+}
+
+.AboutUs .about_information .GS_ .text{
+    margin-left: 45.7%;
+    margin-top: 19px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.AboutUs .about_information .GS_ img{
+    margin-left: 10px;
+} 
+
+.AboutUs .about_information .GS_ img:hover{
+    transform: scale(1.2);
+    border-radius: 10%; 
+    transition: transform 0.7s ease;
+}
+
+.AboutUs .about_information .GS img:hover{
+    transform: scale(1.2);
+    border-radius: 10%; 
+    transition: transform 0.7s ease;
+}
+/*............................. Line .............................*/
+
+.AboutUs .about_information .Linee{
+    position: absolute;
+    width: 10%;
+    right: 26.4%;
+    top: 30%;
+}
+
+.AboutUs .about_information .Linee2{
+    position: absolute;
+    width: 10%;
+    right: 18%;
+    top: 55%;
+}
+
+.AboutUs .about_information .Linee3{
+    position: absolute;
+    width: 10%;
+    right: 26.4%;
+    bottom: 18%;
+}
+
+.AboutUs .about_information .Line_new{
+    position: absolute;
+    width: 5%;
+    right: 24.8%;
+    top: 13%;
+}
+
+.AboutUs .about_information .Line_new1{
+    position: absolute;
+    width: 5%;
+    right: 24.8%;
+    top: 43%;
+}
+
+.AboutUs .about_information .Line_new2{
+    position: absolute;
+    width: 5%;
+    right: 24.8%;
+    bottom: 1%;
+}
 
 /*.........................................*/
 
@@ -602,17 +747,17 @@ header .line img{
 }
 .Services .circle img{
     width: 80px;
-    transform: translateX(-20%);
+    /* transform: translateX(-20%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
-.Services.show-animate .circle img{
+/* .Services.show-animate .circle img{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 /*......................... Heading .....................*/
 
@@ -626,18 +771,18 @@ header .line img{
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     width: 12%;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 2.5s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 
-.Services.show-animate .heading{
+/* .Services.show-animate .heading{
     transform: scale(1);
     opacity: 1;
     filter: blur(0px);
-}
+} */
 
 /*.....................................*/
 
@@ -653,17 +798,17 @@ header .line img{
 .Services .Service_Info .row{
     margin: 0 70px;
     margin-top: 8%;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 3s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
-.Services.show-animate .Service_Info .row{
+/* .Services.show-animate .Service_Info .row{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0px);
-}
+} */
 .Services .Service_Info .row h3 {
     padding: 10px;
     background-color: #d7cbc2;
@@ -678,6 +823,12 @@ header .line img{
     border-radius: 20%;
     background-color: var(--border);
     padding: 10px;
+}
+
+.Services .Service_Info .row .S_11 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--border);
+    transition: transform 0.5s ease;
 }
 
 .Services .Service_Info .row .S_11{
@@ -721,7 +872,7 @@ header .line img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 98vh;
+    min-height: 97vh;
     align-items: center;
     justify-content: center;
 }
@@ -733,18 +884,18 @@ header .line img{
     left: 0;
     top: 0%;   
     margin-left: 5%;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
     margin-top: 20px;
 }
 
-.OurClients.show-animate .head{
+/* .OurClients.show-animate .head{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .OurClients .head .heading1{
     margin-left: 30px;
@@ -820,14 +971,10 @@ header .line img{
     
 }
 
-/* .OurClients .swiper-slide:nth-child(2n) {
-    width: 40%;
+.OurClients .swiper-slide .image-hospital{
+    width: 30%;
+
 }
-
-.OurClients .swiper-slide:nth-child(3n) {
-    width: 20%;
-} */
-
 /* ..................... Buttons ....................*/
 
 .OurClients .swiper .swiper-button-next,
@@ -877,10 +1024,10 @@ header .line img{
     left: 0;
     top: 10%;
     margin-left: 5%;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .OurOranization.show-animate .head{
@@ -932,9 +1079,9 @@ header .line img{
 }
 
 .OurOranization .swiper-slide {
-    display: flex; /* Make the slide a flex container */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 25%;
     margin-top: 20px;
     background-color: #fff8f3;
@@ -1017,17 +1164,17 @@ header .line img{
 .OurEvents .head{
     margin-left: 20%;
     margin-top: 10%;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 2.5s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
-.OurEvents.show-animate .head{
+/* .OurEvents.show-animate .head{
     transform: scale(1);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .OurEvents .head .heading1{
     margin-left: 30px;
@@ -1041,27 +1188,42 @@ header .line img{
 /*...................... Swiper ...................*/
 
 .OurEvents {
-    position: relative; /* Set the container as a positioning context */
+    position: relative;
 }
 
 .OurEvents .swiper {
     width: 100%;
     height: 100%;
-    padding: 170px 14%;
+    padding: 70px 14%;
 }
 
 .OurEvents .swiper-slide {
-    display: flex; /* Make the slide a flex container */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    display: flex; 
     flex-direction: column;
-    width: 25%;
-    margin-top: 20px;
+    justify-content: center; 
+    align-items: center; 
+    width: 30%;
+    margin-top: 12%;
+}
+
+.OurEvents .swiper-slide .Event {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 220px 220px 0 0;
+}
+
+.OurEvents .swiper-slide .col {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
     border:2.4px solid #6F2B25;
     color: #999999;
     font-size: 18px;
     background-color: var(--color);
-    padding: 40px 0px;
+    padding-bottom: 80px;
 }
 
 .OurEvents .swiper-slide .row{
@@ -1071,18 +1233,12 @@ header .line img{
     align-items: center;
 }
 
-.OurEvents .swiper-slide img {
+.OurEvents .swiper-slide .row .Location{
+    margin: 20px;
     display: block;
     width: 10%;
-    object-fit: cover;
-    margin: 20px;
 }
 
-.OurEvents .swiper-slide .pr{
-    margin-left: 50px;
-    margin-bottom: 50px;
-    padding-right: 15px;
-}
 /* ..................... Buttons ....................*/
 
 .OurEvents .swiper .swiper-button-next,
@@ -1110,3 +1266,656 @@ header .line img{
     background-color: #6F2B25;
     color: #fff8f3;
 }
+
+/*..........................................*/
+/*......................... Blog ....................*/
+
+.Blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the elements to the left */
+    box-sizing: border-box;
+    min-height: 95vh;
+    width: 100%;
+}
+
+/*..................... Circle .................*/
+
+.Blog .circle1 img{
+    position: absolute;
+    left: 0;
+    width: 90px;
+    /* transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px); */
+}
+
+/* .Blog.show-animate .circle1 img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+} */
+
+.Blog .circle2 img{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    margin-top: 50%;
+    /* transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px); */
+}
+
+/* .Blog.show-animate .circle2 img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+} */
+
+/*....................... Header .......................*/
+
+.Blog .heading{
+    margin-top: 90px;
+    background-color: #d7cbc2;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    right: 47%;
+    width: 7%;
+    height: 10%;
+    /* transform: scale(.7);
+    opacity: 0;
+    transition: 2.5s;
+    filter: blur(5px); */
+}
+
+/* .Blog.show-animate .heading{
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+} */
+
+/*....................Information (Blog)......................*/
+
+.Blog .square{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.Blog .square .col{
+    align-items: flex-start; 
+    border: 3.4px solid #d38478;
+    padding: 125px 20px;
+    margin: 35px 70px ;
+    border-radius: 60px;
+    box-shadow: 0 2px 7px rgba(160, 158, 158, 0.9);
+}
+
+.Blog .square .col1{
+    border: 3.4px solid #d38478;
+    padding: 125px 20px;
+    margin: 35px 0;
+    margin-left: 47%;
+    border-radius: 60px;
+    box-shadow: 0 2px 7px rgba(160, 158, 158, 0.9);
+}
+
+.Blog .square .col .row,
+.Blog .square .col1 .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.Blog .square .col .row .head_,
+.Blog .square .col1 .row .head_{
+    color: var(--text);
+    font-size: 23px;
+    font-weight: 600;
+    margin: 0px 20px;
+}
+
+.Blog .square .col .row .date,
+.Blog .square .col1 .row .date{
+    margin-left: 10%;
+}
+
+.Blog .square .col .row .date .dd,
+.Blog .square .col1 .row .date .dd{
+    color: var(--button);
+    font-weight: 600;
+}
+
+.Blog .square .col .row .date .Date,
+.Blog .square .col1 .row .date .Date{
+    width: 65px;
+    height: 65px;
+    margin-left: 26%;
+    margin-bottom: 3%;
+}
+
+.Blog .square .col .pa,
+.Blog .square .col1 .pa{
+    color: #CA7062;
+    font-weight:600 ;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/*...................... Speaker Section ........................*/
+
+.Speakers{
+    position: relative;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*................. Circle .................*/
+.Speakers .circle img{
+    position: absolute;
+    width: 100px;
+    /* transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px); */
+    left: 0;
+}
+
+/* .Speakers.show-animate .circle img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+} */
+
+.Speakers .circle2 img{
+    position: absolute;
+    right: 0;
+    width: 90px;
+    margin-top: 30%;
+    /* transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px); */
+}
+
+/* .Speakers.show-animate .circle2 img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+} */
+
+/*..................... Header ....................*/
+
+.Speakers .heading{
+    margin-top: 90px;
+    background-color: #d7cbc2;
+    padding: 10px;
+    text-align: center;
+    /* position: absolute;
+    right: 42%;
+    width: 13%; */
+    height: 8%;
+    /* transform: scale(.7);
+    opacity: 0;
+    transition: 2.5s;
+    filter: blur(5px); */
+}
+
+/* .Speakers.show-animate .heading{
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+} */
+
+/*...................... Button .....................*/
+
+.Speakers button{
+    padding: 10px 20px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    margin: 20px;
+    /* transform: scale(.7);
+    opacity: 0;
+    transition: 1s;
+    filter: blur(5px); */
+}
+
+.Speakers.show-animate button{
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+}
+
+.Speakers button:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: white;
+}
+
+/*....................... Help Us .......................*/
+
+.Speakers .text{
+    margin-bottom: 50%;
+    text-align: center;
+    color: var(--button);
+    font-size: 27px;
+    font-weight: 600;
+    /* opacity: 0;
+    filter: blur(5px);
+    transform: scale(.7);
+    transition: 4s; */
+}
+
+.Speakers.show-animate .text{
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1);
+}
+
+/*..........................Account ......................*/
+
+.Speakers .contact{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    /* transform: scale(.7);
+    opacity: 0;
+    transition: 3.5s;
+    filter: blur(5px); */
+    z-index: 1;
+}
+
+.Speakers.show-animate .contact{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+}
+
+.Speakers .contact .C_1{
+    background-color: var(--backgraound);
+    padding: 20px 40px;
+    margin-right: 60px;
+    margin-bottom: 50%;
+    border-radius: 20px;
+}
+
+.Speakers .contact .C_1:hover{
+    transform: scale(1.1); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.4s ease; /* Add a transition for smooth scaling effect */
+}
+
+.Speakers .contact .C_2{
+    background-color: var(--backgraound);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 50%;
+}
+
+.Speakers .contact .C_2:hover{
+    transform: scale(1.1); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.4s ease; /* Add a transition for smooth scaling effect */
+}
+
+.Speakers .contact .C_1 h4{
+    color: #6F2B25;
+}
+
+.Speakers .contact .C_2 h4{
+    color: #6F2B25;
+}
+
+.Speakers .contact .C_1 .C_12{
+    color: #CA7062;
+}
+
+.Speakers .contact .C_2 .C_22{
+    color: #CA7062;
+}
+
+/*..................... Background Circle ......................*/
+
+.Speakers .Circle{
+    left: 0;
+    bottom: 0%;
+    /* top: 20%; */
+    position: absolute;
+    margin-left: 13px;
+}
+
+.Speakers .Circle img{
+    width: 295%;
+}
+
+/*.......................................................*/
+
+/*.......................Contact Us Section ............................*/
+
+.ContentUs{
+    position: relative;
+    min-height: 100vh;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+}
+
+/*...................... Circle .....................*/
+
+.ContentUs .circle1 img{
+    position: absolute;
+    width: 100px;
+    top: 10%;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px);
+}
+
+.ContentUs.show-animate .circle1 img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+}
+
+/*....................... Heading ........................*/
+
+.ContentUs .heading{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    padding: 10px;
+    background-color: #d7cbc2;
+    width: 42%;
+    /* opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 3s; */
+}
+/* .ContentUs.show-animate .heading{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+} */
+
+/*....................... Feilds ........................*/
+
+.ContentUs .rr{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    padding: 13% 20%;
+    width: 100%;
+    background-color: #EBEAEA;
+}
+
+.ContentUs .rr .col{
+    display: flex;
+    flex-direction: column;
+}
+
+.ContentUs .rr .col .contact_in{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.ContentUs .rr .col .contact_in .contact_info{
+    margin-bottom: 6%;
+    position: relative;
+    width: 35%;
+}
+
+.ContentUs .rr .col .contact_in .contact_info input{
+    /* background-color: #e0e0e0;
+    font-size: 27px;
+    border: 6px solid #e9dedb;
+    padding: 10px; */
+    width: 100%;
+    border: 3px solid #e9dedb;
+    background-color: #e0e0e0;
+    padding: 10px;
+    outline: none;
+    font-size: 2em;
+    transition: .5s;
+}
+
+.ContentUs .rr .col .contact_in .contact_info span{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 2em;
+    color: #999999;
+    transition: 0.5s;
+}
+
+.ContentUs .rr .col .contact_in .contact_info input:valid ~span,
+.ContentUs .rr .col .contact_in .contact_info input:focus ~span{
+    color: black;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1em;
+    padding: 0% 15px;
+    background: #EBEAEA;
+    border-left: 3px solid #CA7062;
+    border-right: 3px solid #CA7062;
+    letter-spacing: 0.2em;
+}
+
+.ContentUs .rr .col .contact_in .contact_info input:valid,
+.ContentUs .rr .col .contact_in .contact_info input:focus{
+    border: 3px solid #d38478;
+}
+
+
+.ContentUs .rr .col .type{
+    position: relative;
+    width: 90%;
+    
+}
+
+.ContentUs .rr .col .type input{
+    width: 100%;
+    border: 3px solid #e9dedb;
+    background-color: #e0e0e0;
+    padding: 10px;
+    outline: none;
+    font-size: 2em;
+    transition: .5s;
+    resize: none;
+    overflow-y: auto; 
+}
+
+.ContentUs .rr .col .type span{
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 2em;
+    color: #999999;
+    transition: 0.5s;
+}
+
+.ContentUs .rr .col .type input:valid ~span,
+.ContentUs .rr .col .type input:focus ~span{
+    color: black;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1em;
+    padding: 0% 15px;
+    background: #EBEAEA;
+    border-left: 3px solid #CA7062;
+    border-right: 3px solid #CA7062;
+    letter-spacing: 0.2em;
+}
+
+.ContentUs .rr .col .type input:valid,
+.ContentUs .rr .col .type input:focus{
+    border: 3px solid #d38478;
+}
+
+/*........................... Button .......................*/
+
+.ContentUs .send{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    background-color: var(--button);
+    color: var(--backgraound);
+    transition: .6s ease;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
+.ContentUs .send:hover{
+    cursor: pointer;
+    background-color: var(--text);
+    color: white;
+}
+
+/*..............................................*/
+/*.................... More Information ......................*/
+
+.more{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.more .sec .imgage{
+    display: flex;
+}
+
+.more .sec .imgage img{
+    width: 38%;
+    height: 20%;
+    margin-top: 5%;
+}
+
+.more .sec .inform {
+    display: flex;
+}
+
+.more .sec .inform .col1 .texttt {
+    font-size: 22px;
+    color: #CA7062;
+    font-weight: 600;
+    text-align: center;
+    margin: 20% 0;
+    margin-top: 10%;
+}
+
+.more .sec .inform .col1 .foll{
+    font-size: 27px;
+    color: #CA7062;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.more .sec .inform .col1 .follow{
+    display: flex;
+    background-color: #d7cbc2;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.more .sec .inform .col1 .follow img{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    transition: .7s ease;
+}
+
+.more .sec .inform .col1 .follow img:hover {
+    cursor: pointer;
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+}
+
+.more .sec .inform .col2{
+    display: flex;
+    margin-left: 80px;
+}
+
+.more .sec .inform .col2 img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.more .sec .inform .col2 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+    border-radius: 20%;
+}
+
+.more .sec .inform .col2 p{
+    font-size: 26px;
+    color: #CA7062;
+    font-weight: 500;
+}
+
+.more .sec .inform .col2 .col21 .col211{
+    margin-right: 90px;
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col212{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col213{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col221{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col222{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col223{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col224{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col214{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+/*...................................................*/
