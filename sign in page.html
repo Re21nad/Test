@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
+            font-family: 'Times New Roman', Times, serif;            display: flex;
             justify-content: flex-end;
             align-items: center;
             height: 100vh;
@@ -41,10 +41,10 @@
             font-size: 30px;
             position: absolute;
             top: 30%;
-            left: 7%;
-
-
+            left: 10%;
         }
+
+        /*.............. you have account ...........*/
 
         .txt11 {
             content: "Welcome Back!";
@@ -52,9 +52,8 @@
             font-size: 20px;
             position: absolute;
             top: 50%;
-            left: 14%;
-
-
+            left: 15%;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .txt2 {
@@ -62,9 +61,7 @@
             color: #c0c0c0;
             font-size: 10px;
             top: 79%;
-            left: 68%;
-
-
+            left: 73%;
         }
 
         .txt2 h2 {
@@ -79,37 +76,41 @@
             text-align: center;
         }
 
+        /*.................Buttom sign up..................*/
+
         .s1 input[type="submit"] {
-            width: 15%;
-            padding: 10px;
+            width: 13%;
+            padding: 15px;
             position: absolute;
             top: 58%;
-            left: 16%;
-            background: #e6d9d0;
-            color: #ca7062;
+            left: 16.5%;
+            background: #ca7062;
+            color: #e6d9d0;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
-            border: 3px solid #ca7062;
+            font-size: 18px;
+            font-weight: 600;
+            transition: .7s;
+        }
 
-        }
         .s1 input[type="submit"]:hover {
-            background: #f0e8e2;
-            color: #f0e8e2;
-            border: 3px solid #f0e8e2;
+            background: #6f2b25;
+            color: white;
         }
+
 
         .c1 {
             content: "";
             display: block;
             position: absolute;
             top: 90%;
-            left: 81%;
+            left: 88%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
+            /* background: #e6d9d0; */
+            /* border-radius: 50%; */
 
         }
 
@@ -118,13 +119,12 @@
             display: block;
             position: absolute;
             top: 90%;
-            left: 75.5%;
+            left: 78.5%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
-
+            /* background: #e6d9d0; */
+            /* border-radius: 50%; */
         }
 
         .c3 {
@@ -132,14 +132,19 @@
             display: block;
             position: absolute;
             top: 90%;
-            left: 69.5%;
+            left: 68.5%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
-
+            /* background: #e6d9d0; */
+            /* border-radius: 50%; */
         }
+
+        /* .c1:hover, .c2:hover, .c3:hover{
+            transform: scale(1); 
+            transition: transform 0.2s ease; 
+            border-radius: 10%; 
+        } */
 
         .shape {
             margin-right: auto;
@@ -167,7 +172,7 @@
         }
 
         .signin-container h1 {
-            left: 40%;
+            left: 47.9%;
             top: 50%;
             text-align: center;
             color: #6f2b25;
@@ -184,7 +189,7 @@
             padding: 10px;
             position: relative;
             background: #e6d9d0;
-            left: 20%;
+            left: 17%;
             border: 1px solid #AAc;
             border-radius: 5px;
             margin-bottom: 20px;
@@ -203,31 +208,32 @@
         }
 
         .signin-container input[type="submit"] {
-            width: 40%;
-            padding: 10px;
+            width: 38%;
+            padding: 15px;
             position: relative;
-            left: 35%;
+            left: 33.6%;
             background: #ca7062;
-            color: #fff;
+            color: #e6d9d0;
+            font-size: 18px;
+            font-weight: 600;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
         }
 
 
         .signin-container input[type="submit"]:hover {
-            background: #e6d9d0;
+            background: #6f2b25;
+            transition: .7s;
+            color: white;
         }
 
         .forgot-password {
             position: relative;
-
-            left: 5%;
+            left: 3.4%;
             text-align: center;
             margin-top: 10px;
             color: #6f2b25;
-
-
         }
 
         .signin-container h2 {
@@ -242,23 +248,21 @@
 
 <body>
 
-    <div class="txt1">
+    <div class="txt1"  data-aos="fade-right" data-aos-duration="3000">
         <h1>Welcome Back!</h1>
     </div>
-    <div class="txt11">
-        <h11>you don’t have an account?</h11>
+    <div class="txt11" data-aos="zoom-in" data-aos-duration="3000">
+        <h11>You don’t have an account?</h11>
     </div>
 
     <div class="txt2">
         <h1>_______ or _______</h1>
     </div>
-   
-    <div class="shape">
-    </div>
+   <div class="shape">
+
+   </div>
     <div class="s1">
-
         <input type="submit" value="Sign Up" onclick="moveShape()">
-
     </div>
 
         <a href="https://www.twitter.com" target="_blank">
@@ -271,7 +275,7 @@
             <img src="images/google.png" alt="Google" class="c3">
         </a>
 
-        <img src="images/circle2.png" class="img1">
+        <img src="images/circle2.png" class="img1" data-aos="fade-right" data-aos-duration="1500">
         <img src="images/circle2.png" class="img2">
 
 
@@ -304,6 +308,12 @@
                     window.location.href = "sign up.html"; // Replace with your target page's name
                 }, 900); // 2000ms = 2 seconds delay
             }
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- AOS -->
+        <script> 
+            AOS.init();
         </script>
 
         <div class="signin-container">

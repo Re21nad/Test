@@ -51,6 +51,7 @@ header .navigation1 a:hover{
 }
 
 /*.............. Logo ...............*/
+
 header .logoo img {
     width: 170px;
     height: 120px;
@@ -68,6 +69,7 @@ header .line img{
 }
 
 /*.................... Button ..................*/
+
 .LogIn{
     background-color: var(--button);
     color: var(--backgraound);
@@ -89,6 +91,7 @@ header .line img{
 }
 
 /*................... Main Section ......................*/
+
 .Main_Section{
     width: 100%;
     overflow-x: hidden;
@@ -103,6 +106,7 @@ header .line img{
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /*.........................................*/
 
 /*................... Home Section ......................*/
@@ -114,11 +118,19 @@ header .line img{
 .Home .contant{
     text-align: center;
     justify-content: center;
-    background-color: var(--button);
+    /* background-color: var(--button); */
     padding: 110px 190px;
 }
 
+.Home .contant img{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    top: 0;
+}
 .Home .contant h2{
+    z-index: 1;
     transform: translateY(100%);
     opacity: 0;
     transition: 2.5s;
@@ -171,6 +183,7 @@ header .line img{
     width: 25px;
     height: 25px;
     background-color: var(--border);
+    color: var(--button);
 }
 
 /*................... Search Button ...................*/
@@ -524,11 +537,11 @@ header .line img{
 /*..................... Information (Why Us) .................*/
 
 .Why_Us .Why_Info .Why_a{
+    margin-top: 10%;
     display: flex;
     color: var(--text);
     font-size: 27px;
     justify-content: center;
-
 }
 
 .Why_Us .Why_Info .Why_a .Info{
@@ -536,8 +549,9 @@ header .line img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 180px;
+    margin-right: 120px;
 }
+
 .Why_Us .Why_Info .Why_a .Info img{
     width: 50px;
     transform: scale(.7);
@@ -572,6 +586,7 @@ header .line img{
     opacity: 0;
     transition: 3s;
     filter: blur(5px);
+    text-align: center;
 }
 
 .Why_Us.show-animate .Why_Info .Why_a p{
@@ -691,6 +706,15 @@ header .line img{
     margin-top: 20px;
 }
 
+.Categories .row .input .radio_t img{
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    padding: 10px;
+}
+
 #Categories .row .input .radio_t ion-icon{
     color: white;
     text-align: center;
@@ -797,7 +821,7 @@ header .line img{
 
 .Services .Service_Info .row{
     margin: 0 70px;
-    margin-top: 8%;
+    margin-top: 15%;
     /* transform: translateX(-100%);
     opacity: 0;
     transition: 3s;
@@ -872,7 +896,7 @@ header .line img{
     width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 97vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
 }
@@ -934,7 +958,7 @@ header .line img{
 
 .OurClients .swiper {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #fff8f3;
     padding: 150px 14%;
 }
@@ -967,13 +991,11 @@ header .line img{
 }
 
 .OurClients .swiper-slide .image-saudi-heart{
-    width: 43%;
-    
+    width: 43%;   
 }
 
 .OurClients .swiper-slide .image-hospital{
     width: 30%;
-
 }
 /* ..................... Buttons ....................*/
 
@@ -1152,6 +1174,7 @@ header .line img{
 /*................. Circle ..................*/
 .OurEvents .Circle{
     position: absolute;
+    bottom: 65%;
 }
 
 .OurEvents .Circle img{
@@ -1163,7 +1186,6 @@ header .line img{
 
 .OurEvents .head{
     margin-left: 20%;
-    margin-top: 10%;
     /* transform: scale(.7);
     opacity: 0;
     transition: 2.5s;
@@ -1204,13 +1226,20 @@ header .line img{
     align-items: center; 
     width: 30%;
     margin-top: 12%;
+    transition: .7s ease;
 }
 
+/* .OurEvents .swiper-slide:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+} */
+
 .OurEvents .swiper-slide .Event {
-    display: block;
+    /* display: block; */
     width: 100%;
-    height: auto;
-    object-fit: cover; 
+    height: 100%;
+    /* height: auto; */
+    /* object-fit: cover;  */
     border-radius: 220px 220px 0 0;
 }
 
@@ -1226,13 +1255,18 @@ header .line img{
     padding-bottom: 80px;
 }
 
-.OurEvents .swiper-slide .row{
+.OurEvents .swiper-slide .col .row{
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    transition: .7s ease;
 }
 
+.OurEvents .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
 .OurEvents .swiper-slide .row .Location{
     margin: 20px;
     display: block;
@@ -1355,6 +1389,27 @@ header .line img{
     box-shadow: 0 2px 7px rgba(160, 158, 158, 0.9);
 }
 
+.Blog .square .col:hover,
+.Blog .square .col1:hover{
+    transition: .7s ease;
+    box-shadow: 3px 5px 5px var(--button);
+    background-color: #e6e1e1;
+}
+
+.Blog .square .col h4,
+.Blog .square .col1 h4{
+    color: var(--button);
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.Blog .square .col h4:hover,
+.Blog .square .col1 h4:hover{
+    cursor: pointer;
+}
+
 .Blog .square .col1{
     border: 3.4px solid #d38478;
     padding: 125px 20px;
@@ -1474,6 +1529,58 @@ header .line img{
     opacity: 1;
     filter: blur(0px);
 } */
+
+/*..................... information ..................*/
+
+.Speakers .cross .arow .bt-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: fit-content;
+    padding: 20px 0;
+}
+
+.Speakers .cross .arow .con {
+    width: 50vw;
+    height: 200px;
+    border: 5px solid #000;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    position: relative;
+}
+
+.Speakers .cross .arow .swiper {
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10vw);
+    transform-origin: center center 0;
+    font-size: 4rem;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+.Speakers .cross .arow .swiper-1 {
+    transform: translate3d(-20vw, 0, -10vw);
+}
+
+.Speakers .cross .arow .swiper-2 {
+    transform: translate3d(-10vw, 0, -5vw);
+}
+
+.Speakers .cross .arow .swiper-3 {
+    transform: translate3d(0, 0, 0);
+}
+
+.Speakers .cross .arow .swiper-4 {
+    transform: translate3d(10vw, 0, -5vw);
+}
+
+.Speakers .cross .arow .swiper-5 {
+    transform: translate3d(20vw, 0, -10vw);
+}
 
 /*...................... Button .....................*/
 
@@ -1672,7 +1779,7 @@ header .line img{
 .ContentUs .rr .col .contact_in{
     display: flex;
     flex-direction: row;
-    gap: 20%;
+    gap: 5%;
 }
 
 .ContentUs .rr .col .contact_in .contact_info{
@@ -1725,8 +1832,7 @@ header .line img{
 
 .ContentUs .rr .col .type{
     position: relative;
-    width: 90%;
-    
+    width: 100%; 
 }
 
 .ContentUs .rr .col .type input{

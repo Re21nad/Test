@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* background-color: var(--backgraound); */
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --backgraound: #E6D9D0;
+    --border: #DDC5B2;
+    --text: #6F2B25;
+    --button: #CA7062;
+    --color: #EBEAEA;
+    --shadaw: rgba(110, 110, 110, 0.9);
+}
+
+/*............... Header ...............*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 38px 90px;
+    z-index: 1000;
+    background-color: var(--backgraound);
+}
+
+header .navigation1 a{
+    padding: 20px 25px ;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .navigation1 a:hover{
+    color: var(--button);
+}
+
+/*.............. Logo ...............*/
+header .logoo img {
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .line img{
+    width: 60px;
+    height: 70px;
+    right: 10%;
+    top: 13%;
+    position: absolute;
+}
+
+/*................... Main Section ......................*/
+.Main_Section{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--backgraound);
+}
+
+/*................... Main headers ......................*/
+
+.heading{
+    margin-top: 5%;
+    margin-left: 3%;
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 87%;
+    height: auto;
+}
+/*.........................................*/
+
+/*................ Detail Section ..................*/
+
+.Details{
+    display: flex;
+    position: relative;
+}
+
+.Details .heading{
+    background-color: #d7cbc2;
+}
+/*..................... Circle ......................*/
+
+.Details .Circle {
+    background-color: transparent;
+    transform: rotate(90deg) translateY(15px);
+}
+
+.Details .Circle img {
+    width: 470%;
+    background-color: transparent;
+}
+
+/*.......................... Information ........................*/
+
+.Details .row{
+    color: var(--button);
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.Details .row .paragraph,
+.Details .row h2{
+    padding: 50px;
+    line-height: 1.5;
+}
+
+.Details .row h2{
+    color: var(--text);
+    background-color: #d7cbc2;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 32%;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Details .row .sections{
+    padding-left:80px;
+    line-height: 2;
+    font-size: 22px;
+}
+
+/*....................... Organizers .................*/
+
+.organizers .col{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.organizers .col .row{
+    color: var(--button);
+    font-size: 20px;
+    margin: 56px
+}
+
+/*..................... Clibs .................*/
+
+.clips {
+    display: flex;
+    justify-content: center; /* Center the .heading horizontally */
+}
+
+.clips .heading {
+    background-color: #d7cbc2;
+    padding: 10px;
+    text-align: center;
+    width: 15%;
+    margin: 0 auto;
+    height: 10%;
+}
+
+/*..................... Circle ....................*/
+
+.clips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.clips .circle{
+    position: absolute;
+    left: 0;
+}
+
+.clips .images {
+    display: flex;
+    margin: 5%;
+}
+
+.clips .images img {
+    margin: 60px;
+    border-radius: 20%;
+    width: 300px; 
+    height: auto; 
+}
+
+.clips .images img:hover{
+    transition: .4s;
+    box-shadow: 0 7px 7px #a8a4a4;
+    cursor: pointer;
+}
+
+/*.................... More Information ......................*/
+
+.more{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.more .sec .imgage{
+    display: flex;
+}
+
+.more .sec .imgage img{
+    width: 38%;
+    height: 20%;
+    margin-top: 5%;
+}
+
+.more .sec .inform {
+    display: flex;
+}
+
+.more .sec .inform .col1 .texttt {
+    font-size: 22px;
+    color: #CA7062;
+    font-weight: 600;
+    text-align: center;
+    margin: 20% 0;
+    margin-top: 10%;
+}
+
+.more .sec .inform .col1 .foll{
+    font-size: 27px;
+    color: #CA7062;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.more .sec .inform .col1 .follow{
+    display: flex;
+    background-color: #d7cbc2;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.more .sec .inform .col1 .follow img{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    transition: .7s ease;
+}
+
+.more .sec .inform .col1 .follow img:hover {
+    cursor: pointer;
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+}
+
+.more .sec .inform .col2{
+    display: flex;
+    margin-left: 80px;
+}
+
+.more .sec .inform .col2 img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.more .sec .inform .col2 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+    border-radius: 20%;
+}
+
+.more .sec .inform .col2 p{
+    font-size: 26px;
+    color: #CA7062;
+    font-weight: 500;
+}
+
+.more .sec .inform .col2 .col21 .col211{
+    margin-right: 90px;
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col212{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col213{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col221{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col222{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col223{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col224{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col214{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+/*...................................................*/

@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+:root{
+    --backgraound: #E6D9D0;
+    --border: #DDC5B2;
+    --text: #6F2B25;
+    --button: #CA7062;
+    --color: #EBEAEA;
+    --shadaw: rgba(110, 110, 110, 0.9);
+}
+
+/*............... Header ...............*/
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 38px 90px;
+    z-index: 1000;
+    background-color: var(--backgraound);
+}
+
+header .navigation1 a{
+    padding: 20px 25px ;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .navigation1 a:hover{
+    color: var(--button);
+}
+
+/*.............. Logo ...............*/
+header .logoo img {
+    width: 170px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .line img{
+    width: 60px;
+    height: 70px;
+    right: 10%;
+    top: 13%;
+    position: absolute;
+}
+
+/*................... Main Section ......................*/
+.Main_Section{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--backgraound);
+}
+
+/*................... Main headers ......................*/
+
+.heading, .heading1{
+    color: var(--text);
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*.........................................*/
+
+/*................... Description Section ....................*/
+
+.Description{
+    position: relative;
+}
+
+/*...................... Circle ................*/
+
+.Description .Circlee{
+    position: absolute;
+}
+
+.Description .Circlee img {
+    width: 115%; /* Set the desired width */
+    height: 60%; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+/*...................... heading ...................*/
+.Description .heading{
+    z-index: 1;
+    margin-top: 17%;
+    margin-left: 20px;
+}
+
+.Description .col{
+    display: flex;
+}
+
+.Description .col .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.Description .col .row .col2{
+    font-size: 23px;
+    color: var(--text);
+    margin: 30px 100px;
+    display: flex;
+}
+
+.Description .col .row .col2 p{
+    line-height: 1.5;
+    text-align: center;
+}
+
+.Description .col .row .col2 .row2 .image img{
+    width: 50%;
+    height: 48%;
+    margin-top: 30%;
+    margin-left: 50%;
+}
+
+.Description .col .row .col2 .row2 .day{
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    left: 34%;
+    font-size: 20px;
+}
+
+.Description .col .row .col2 .row2 .hr{
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    left: 52%;
+    font-size: 20px;
+}
+
+.Description .col .row .col2 .row2 .min{
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    left: 69.6%;
+    font-size: 20px;
+}
+
+.Description .col .row .col2 .row2 .sec{
+    z-index: 1;
+    position: absolute;
+    top: 13%;
+    left: 87.3%;
+    font-size: 20px;
+}
+
+.Description .col1 .point,
+.Description .col1 .point2,
+.Description .col1 .point3,
+.Description .col1 .point4{
+    display: flex;
+    margin: 5% 50px;
+    color: var(--text);
+    font-size: 22px;
+}
+
+.Description .col1 .point img{
+    width: 20px;
+    margin: 0 20px;
+}
+
+.Description .col1 .point2 img{
+    width: 20px;
+    margin: 0 20px;
+    margin-left: 10%;
+}
+
+.Description .col1 .point3 img{
+    width: 20px;
+    margin: 0 20px;
+    margin-left: 20%;
+}
+
+.Description .col1 .point4 img{
+    width: 20px;
+    margin: 0 20px;
+    margin-left: 30%;
+}
+
+/*.................... Circle ..................*/
+
+.Description .circle2{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+/*................. Time Section .................*/
+
+.time .circle{
+    position: absolute;
+    left: 0;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    background-color: #EBEAEA;
+    position: relative;
+}
+
+.time .row{
+    display: flex;
+    flex-direction: column;
+}
+
+.time .row .col{
+    display: flex;
+    flex-direction: row;
+}
+
+.time .row .col img{
+    width: 7%;
+    margin: 10px 20px;
+    background: transparent;
+}
+
+.time .row .col img:hover{
+    transform: scale(1.1); 
+    transition: transform 0.2s ease; 
+    border-radius: 10%; 
+}
+
+.time .row .col p{
+    font-size: 20px;
+    color: var(--text);
+    margin-top: 32px;
+}
+
+.time .row .row1{
+    display: flex;
+    margin-top: 20%;
+}
+
+.time .row .row1 img{
+    width: 10%;
+    height: 50%;
+    position: absolute;
+    left: 43%;
+    top: 28%;
+}
+
+.time .row .row1 img:hover{
+    transform: scale(1.1); 
+    transition: transform 0.2s ease; 
+    border-radius: 10%; 
+}
+
+.time .row .row1 p{
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    padding: 13px;
+    background-color: #dcd9d9;
+    margin: 15px;
+    position: absolute;
+    right: 32%;
+    top: 30%;
+}
+
+.time .row .col1{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    color: var(--text);
+    font-size: 20px;
+}
+
+
+/*........................ More Information ......................*/
+
+
+.more{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.more .sec .imgage{
+    display: flex;
+}
+
+.more .sec .imgage img{
+    width: 38%;
+    height: 20%;
+    margin-top: 5%;
+}
+
+.more .sec .inform {
+    display: flex;
+}
+
+.more .sec .inform .col1 .texttt {
+    font-size: 22px;
+    color: #CA7062;
+    font-weight: 600;
+    text-align: center;
+    margin: 20% 0;
+    margin-top: 10%;
+}
+
+.more .sec .inform .col1 .foll{
+    font-size: 27px;
+    color: #CA7062;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.more .sec .inform .col1 .follow{
+    display: flex;
+    background-color: #d7cbc2;
+    width: 40%;
+    margin: 20px 20px;
+}
+
+.more .sec .inform .col1 .follow img{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    transition: .7s ease;
+}
+
+.more .sec .inform .col1 .follow img:hover {
+    cursor: pointer;
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+}
+
+.more .sec .inform .col2{
+    display: flex;
+    margin-left: 80px;
+}
+
+.more .sec .inform .col2 img{
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.more .sec .inform .col2 img:hover{
+    transform: scale(1.2); /* Increase the value to scale the image further */
+    box-shadow: 0px 2px 7px var(--shadaw);
+    transition: transform 0.2s ease; /* Add a transition for smooth scaling effect */
+    border-radius: 20%;
+}
+
+.more .sec .inform .col2 p{
+    font-size: 26px;
+    color: #CA7062;
+    font-weight: 500;
+}
+
+.more .sec .inform .col2 .col21 .col211{
+    margin-right: 90px;
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col212{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col213{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col221{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col222{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col223{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col22 .col224{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.more .sec .inform .col2 .col21 .col214{
+    display: flex;
+    margin-bottom: 56px;
+}
+
+/*...................................................*/

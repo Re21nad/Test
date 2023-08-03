@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,
         initial-scale=1.0">
         <title> Red Sand </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.css">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
         <link rel="stylesheet" href="categories_style.css">
@@ -14,11 +15,11 @@
     <body>
 
         <!-- Navigation -->
-        <header>
+        <header id="header_">
             <div class="logoo">
                 <img src="images\Logo.png" alt="logo">
             </div>
-            <div class="navigation1">
+            <div class="navigation1" id="navigation1">
                 <a href="#Home">Home</a>
                 <a href="#AboutUs">About us</a>
                 <a href="#Categories">Categories</a>
@@ -31,7 +32,7 @@
             <div class="line">
                 <img src="images/line2.png" alt="Line">
             </div>
-            <button class="LogIn" onclick="moveShape()">Log in</button>
+            <button class="LogIn" onclick="moveShape()" id="LogIn">Log in</button>
         </header>
 
         <!-- Main Section -->
@@ -40,13 +41,28 @@
             <div class="searching" data-aos="fade-up" data-aos-duration="2000">
                 <div class="navigation2">
                     <ion-icon name="search-outline"></ion-icon>
-                    <a href="#eventDate" class="eventDate">Event Date</a>
+                    <!-- <a href="#eventDate" class="eventDate">Event Date</a> -->
+                    <div class="dropdown">
+                        <input type="date" id="date" class="date">
+                      </div>
                     <img src="images/line2.png" alt="Line">
                     <ion-icon name="copy-outline"></ion-icon>
-                    <a href="#eventType" class="eventType">Event Type</a>
+                    <!-- <a href="#eventType" class="eventType">Event Type</a> -->
+                    <div class="dropdown">
+                        <select id="eventDropdown">
+                          <option value="" disabled selected>Event Type</option>
+                          <option value="health">Health and Wellness</option>
+                          <option value="education">Education and Training</option>
+                          <option value="business">Business and Strategy</option>
+                          <option value="arts">Arts and Craft</option>
+                          <option value="science">Science and Research</option>
+                          <option value="engineering">Industrial Engineering</option>
+                          <option value="sports">Sports and Travel</option>
+                        </select>
+                      </div>
                     <img src="images/line2.png" alt="Line">
                 </div>
-                <button class="search">Search</button>
+                <button class="search" id="scrollButton">Search</button>
             </div>
             <!-- Categories Section -->
             <section id="Categories_type" class="Categories_type">
@@ -717,57 +733,57 @@
                 </section>
             </section>
             <!-- Description Section -->
-            <section id="Description" class="Description">
-                <div class="Circle">
+            <!-- <section id="Description" class="Description"> -->
+                <!-- <div class="Circle">
                     <img src="images/background_circle.png" alt="Circle">
                 </div>
                 <div class="circle2">
                     <img src="images/circle4.png" alt="Circle">
-                </div>
-                <h1 class="heading">Description</h1>
+                </div> -->
+                <!-- <h1 class="heading">Description</h1> -->
                 <!-- Text -->
-                <div class="text_description">
+                <!-- <div class="text_description"> -->
                     <!-- Dates -->
-                    <div class="dates">
+                    <!-- <div class="dates"> -->
                         <!-- Day -->
-                        <div class="time">
+                        <!-- <div class="time"> -->
                             <!-- Image Circle -->
-                            <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle">
+                            <!-- <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle"> -->
                             <!-- text -->
-                            <div class="info">
+                            <!-- <div class="info">
                                 <p class="day">...<br>Day</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Hour -->
-                        <div class="time">
+                        <!-- <div class="time"> -->
                             <!-- Image Circle -->
-                            <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle1">
+                            <!-- <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle1"> -->
                             <!-- text -->
-                            <div class="info">
+                            <!-- <div class="info">
                                 <p class="hr">...<br>Hr</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- Minute -->
-                        <div class="time">
+                        <!-- <div class="time"> -->
                             <!-- Image Circle -->
-                            <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle2">
+                            <!-- <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle2"> -->
                             <!-- text -->
-                            <div class="info">
+                            <!-- <div class="info">
                                 <p class="min">...<br>Min</p>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- second -->
-                        <div class="time">
+                        <!-- <div class="time"> -->
                             <!-- Image Circle -->
-                            <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle3">
+                            <!-- <img src="images/dots_circle.png" alt="dot_circle" class="dot_circle3"> -->
                             <!-- text -->
-                            <div class="info">
+                            <!-- <div class="info">
                                 <p class="sec">...<br>Sec</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- Description -->
-                    <div class="text">
+                    <!-- <div class="text">
                         <p>
                             Influential media, entertainment & technology show inspirational speakers including game changing<br>
                             not just a large-scale conference, but a large educational hub on digital technologies for business,<br>
@@ -776,19 +792,83 @@
                             features sessions and performances that explore climate, meritocracy, giving.
                         </p>
                     </div>
-                </div>
-
-                <!-- <div class="detal">
-                    <h1 class="heading">
-                        During this event we'll cover
-                    </h1>
-                    <!-- details -->
-                   <!-- <div class="info">
-                        <!-- Image -->
-                        <!-- Text -->
-                        <!--<p class="text">How to get started learning </p>
-                    </div>
                 </div> -->
+
+            <!-- </section> -->
+
+            <!-- More Information -->
+            <section class="more">
+                <div class="sec">
+                    <div class="imgage">
+                        <img src="images/Logo.png" alt="Logo">
+    
+                    </div>
+                    <div class="inform">
+                        <div class="col1">
+                            <p class="texttt">From idea to production, here is your hassle-free experience to<br>
+                                create an exceptional event with RED Sand event. </p>
+                            <p class="foll">Follow Us</p>
+                            <div class="follow">
+                                <a href="https://www.youtube.com" target="_blank">
+                                    <img src="images/youtube.png" alt="youtube">
+                                </a>
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <img src="images/twitter.png" alt="twitter">
+                                </a>
+                                <a href="https://www.facebook.com" target="_blank">
+                                    <img src="images/facebook.png" alt="facebook">
+                                </a>
+                                <a href="https://www.instagram.com" target="_blank">
+                                    <img src="images/instagram.png" alt="instagram">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="col21">
+    
+                                <div class="col211">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Barcelona, SP</p>
+                                </div>
+                                <div class="col212">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>London, UK</p>
+                                </div>
+                                <div class="col213">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>New York, US</p>
+                                </div>
+                                <div class="col214">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Sydney, AU</p>
+                                </div>
+                                
+    
+                            </div>
+                            <div class="col22">
+    
+                                <div class="col221">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Dubai, UAE</p>
+                                </div>
+                                <div class="col222">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Moscow, RU</p>
+                                </div>
+                                <div class="col223">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Paris, FR</p>
+                                </div>
+                                <div class="col224">
+                                    <img src="images/location.png" alt="Location">
+                                    <p>Tokyo, JP</p>
+                                </div>
+                                
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
         <!-- ICONS -->
@@ -825,6 +905,78 @@
         <!-- AOS -->
         <script> 
             AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.9/dist/flatpickr.min.js"></script>
+        <!-- Sections -->
+        <script>
+            // Add an event listener to the dropdown to handle the selection change     
+            document.getElementById('scrollButton').addEventListener('click', function() {
+            // Get the selected value from the dropdown
+            const selectedValue = document.getElementById('eventDropdown').value;
+
+            // Use the selected value to navigate to the corresponding section
+            if (selectedValue === 'health') {
+                scrollToSection('Health_Wellness');
+            } else if (selectedValue === 'education') {
+                scrollToSection('Education_Training');
+            } else if (selectedValue === 'business') {
+                scrollToSection('Business_Strategy');
+            } else if (selectedValue === 'arts') {
+                scrollToSection('Arts_Craft');
+            } else if (selectedValue === 'science') {
+                scrollToSection('Science_Research');
+            } else if (selectedValue === 'engineering') {
+                scrollToSection('Industrial_Engineering');
+            } else if (selectedValue === 'sports') {
+                scrollToSection('Sports_Travel');
+            }
+            });
+
+            // Function to scroll to a specific section on the page
+            function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                // Use smooth behavior for a smooth scrolling effect
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            }
+        </script>
+        <!-- Lod In -->
+        <script> 
+            function moveShape(){
+                window.location.href = "sign in page.html";
+            }
+        </script>
+        <!-- Home -->
+        <script>
+
+            // Add click event listeners to header links to handle smooth scrolling
+            document.addEventListener('DOMContentLoaded', function() {
+            const headerLinks = document.querySelectorAll('#header_ .navigation1 a');
+
+            // Loop through all header links and add click event listener
+            headerLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+
+                // Get the target section's ID from the link's href attribute
+                const targetSectionId = link.getAttribute('href');
+
+                // Call the scroll function with the target section ID
+                scrollToSection(targetSectionId);
+                    });
+                });
+            });
+
+            // Function to scroll to a specific section on the page
+            // Function to scroll to a specific section on another page
+            function scrollToSection(sectionId) {
+            // Construct the URL with the sectionId as the URL fragment
+            const targetURL = `ttt.html#${sectionId}`;
+
+            // Navigate to the target URL
+            window.location.href = targetURL;
+            }
         </script>
     </body>
 </html>

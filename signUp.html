@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title> Sign Up Page</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Style of the page -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            section{
+                display: flex;
+                background: var(--backgraound1);
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            :root{
+                --backgraound: #E6D9D0;
+                --backgraound1: #f4e9e2;
+                --border: #DDC5B2;
+                --text: #6F2B25;
+                --button: #CA7062;
+                --color: #EBEAEA;
+                --shadaw: rgba(159, 158, 158, 0.9);
+            }
+
+            /*.................. Movement ...............*/
+
+            .move-to-left {
+                transform: translateX(-100%);
+                transition: transform 1s;
+            }
+
+            /*................. The right side ...............*/
+
+            .sign_up_container{
+                width: 50%;
+                min-height: 100vh;
+                background-color: var(--backgraound1);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                /* z-index: 1; */
+                /* color: var(--text);
+                font-size: 32px;
+                padding: 20px; */
+            }
+
+            /*.................... Heading ...................*/
+
+            .sign_up_container h2{
+                color: var(--text);
+                font-size: 32px;
+                padding: 30px;
+            }
+
+            .sign_up_container .names{
+                display: flex;
+            }
+
+            .sign_up_container input{
+                margin: 13px 10px;
+                width: 50%;
+                padding: 17px;
+                border-radius: 50px;
+                border: none;
+                box-shadow: 0 2px 5px var(--shadaw);
+            }
+
+            .sign_up_container .or{
+                margin-top: 4%;
+                color: var(--text);
+                font-size: 18px;
+            }
+
+            .sign_up_container .accounts{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px 0px;
+            }
+
+            .sign_up_container .accounts img{
+                width: 90%;
+                height: 30%;
+                background: transparent;
+                background-color: white;
+                border-radius: 50%;
+                padding: 15px;
+                margin-top: 20%;
+                box-shadow: 0px 2px 7px #d2d0d0;
+            }
+
+            .sign_up_container .accounts img:hover{
+                transform: scale(1.15); 
+                box-shadow: 0px 2px 7px var(--shadaw);
+                transition: transform 0.2s ease;
+            }
+
+            .sign_up_container .accounts a{
+                margin: 0 30px;
+            }
+
+            .sign_up_container input[type="submit"]{
+                background: #ca7062;
+                color: #e6d9d0;
+                border: none;
+                border-radius: 18px;
+                padding: 13px 37px;
+                font-size: 18px;
+                font-weight: 600;
+                box-shadow: 0 2px 7px var(--button);
+                position: absolute;
+                bottom: 10%;
+                width: 9%;
+            }
+
+            .sign_up_container input[type="submit"]:hover{
+                cursor: pointer;
+                background: #6f2b25;
+                color: white;
+                box-shadow: 0 2px 7px var(--text);
+                transition: .7s ease-in-out;
+            }
+
+            .sign_up_container .Logo{
+                position: absolute;
+                width: 12%;
+                top: 0%;
+                left: 0%;
+            }
+            /*.................... The left side ....................*/
+
+            .heading{
+                width: 50%;
+                background-color: var(--backgraound);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: var(--text);
+                font-size: 32px;
+                padding: 20px;
+                z-index: 1;
+            }
+
+            .heading .para{
+                margin: 20px 120px;
+            }
+
+            /*................... Circle .................*/
+
+            .heading .circle1{
+                position: absolute;
+                top: 0%;
+                left: 50%;
+            }
+
+            .heading .circle2{
+                position: absolute;
+                bottom: 0%;
+                right: 0%;
+            }
+
+            .heading .account{
+                display: flex;
+                font-size: 19px;
+                color: var(--button);
+                margin-top: 20px;
+            }
+
+            .heading input{
+                /* margin-left: 15px;
+                color: #b5b3b3;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 600; */
+                background: none;
+                color: #b5b3b3;
+                border: none;
+                border-radius: 18px;
+                margin: 0px 30px;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 38px;
+            }
+
+            .heading input:hover{
+                cursor: pointer;
+                color: var(--text);
+                transition: .5s ease-in-out;
+            }
+
+            .heading .input:hover{
+                color: var(--text);
+                cursor: pointer;
+                transition: .5s ease;
+            }
+
+            .heading .hidden {
+                opacity: 0;
+            }
+
+            .heading .para,
+            .heading .account {
+                transition: opacity 0.2s ease-out;
+            }
+
+        </style>
+        <body>
+
+            <section>
+                <!-- Sign Up Container -->
+                <div class="sign_up_container">
+                    <img src="images/Logo.png" alt="Logo" class="Logo" data-aos="zoom-in" data-aos-duration="2000">
+                    <h2 data-aos="zoom-in" data-aos-duration="3000">Sign Up</h2>
+                    <div class="names" data-aos="zoom-in" data-aos-duration="1000">
+                        <input type="text" id="name" name="name" placeholder="First Name" required>
+                        <input type="text" id="name" name="name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="Email" required data-aos="zoom-in" data-aos-duration="1500">
+                    <input type="password" id="password" name="password" placeholder="Password" required data-aos="zoom-in" data-aos-duration="2000">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required data-aos="zoom-in" data-aos-duration="3000">
+                    <p class="or" data-aos="zoom-in" data-aos-duration="3000">______________ or sign up with ______________</p>
+                    <div class="accounts">
+                        <a href="https://www.twitter.com" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
+                            <img src="images/twitter1.png" alt="Twitter" class="twitter">
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" data-aos="zoom-in" data-aos-duration="2000">
+                            <img src="images/facebook1.png" alt="Facebook" class="facebook">
+                        </a>
+                        <a href="https://www.google.com" target="_blank" data-aos="zoom-in" data-aos-duration="3000">
+                            <img src="images/google.png" alt="Google" class="google">
+                        </a>
+                    </div>
+                    <input type="submit" value="Sign Up" data-aos="fade-in" data-aos-duration="3000">
+                    
+                </div>
+                <!-- Heading -->
+                <div class="heading">
+                    <div class="circle1">
+                        <img src="images/circle2.png" alt="Circle">
+                    </div>
+                    <div class="head">
+                        <h3 class="heading1" data-aos="zoom-in" data-aos-duration="3000">Red Sand Event</h3>
+                        <img src="images/Linee.png" alt="Line" class="Line">
+                        <p class="para" data-aos="zoom-in" data-aos-duration="2000">We're excited to have you on board and help you plan, orginize, and manage your events.</p>
+                        <img src="images/Linee.png" alt="Line" class="Line1">
+                    </div>
+                    <div class="circle2">
+                        <img src="images/circle4.png" alt="Circle">
+                    </div>
+                    <div class="account">
+                        <p data-aos="fade-right" data-aos-duration="3000">Already have an account?</p>
+                        <input type="submit" value="Log In" onclick="moveShape()" data-aos="fade-right" data-aos-duration="3000">
+                    </div>
+                    
+                </div>
+            </section>
+        </body>
+        <!-- Move Shape -->
+        <script>
+            function moveShape() {
+            document.querySelector('.heading input').addEventListener('click', function() {
+                const circle1 = document.querySelector('.circle1');
+                const circle2 = document.querySelector('.circle2');
+                const account = document.querySelector('.account');
+                const input = document.querySelector('.heading input');
+                // const image = document.querySelector('.heading .Line');
+                // const image1 = document.querySelector('.heading .Line1');
+                // const paragraph = document.querySelector('.heading .para');
+                const head = document.querySelector('.heading .head');
+
+
+                // Add the 'hidden' class to the elements
+                circle1.classList.add('hidden');
+                circle2.classList.add('hidden');
+                account.classList.add('hidden');
+                input.classList.add('hidden');
+                // image.classList.add('hidden');
+                // image1.classList.add('hidden');
+                // paragraph.classList.add('hidden');
+                head.classList.add('hidden');
+
+
+                const shapeElement = document.querySelector('.heading');
+                shapeElement.classList.add('move-to-left');
+                // Now, navigate to the target page after a delay
+                setTimeout(function () {
+                    window.location.href = "signIn.html"; // Replace with your target page's name
+                }, 1000); // 2000ms = 2 seconds delay
+            });
+        }
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- AOS -->
+        <script> 
+            AOS.init();
+        </script>
+    </head>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <title> Sign In Page</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Style of the page -->
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            section{
+                display: flex;
+                background: var(--backgraound1);
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            :root{
+                --backgraound: #E6D9D0;
+                --backgraound1: #f4e9e2;
+                --border: #DDC5B2;
+                --text: #6F2B25;
+                --button: #CA7062;
+                --color: #EBEAEA;
+                --shadaw: rgba(159, 158, 158, 0.9);
+            }
+
+            /*.................. Movement ...............*/
+
+            .move-to-right {
+                transform: translateX(100%);
+                transition: transform 1s;
+            }
+
+            /*............... The right side .....................*/
+
+            .heading{
+                width: 50%;
+                min-height: 100vh;
+                background-color: var(--backgraound);
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+            }
+
+            /*.......................circle .....................*/
+
+            .heading .circle1{
+                position: absolute;
+                bottom: 0%;
+                left: 0;
+            }
+
+            .heading .circle2{
+                position: absolute;
+                top: 0%;
+                right: 50%;
+            }
+
+            /*....................... Heading .................*/
+
+            .heading .head{
+                z-index: 1;
+                color: var(--text);
+                font-size: 32px;
+                padding: 20px;
+            }
+
+            .heading .head .heading1{
+                margin: 30px 0px;
+            }
+
+            /*..............................Button ......................*/
+
+            .heading .head input{
+                background: #ca7062;
+                color: #e6d9d0;
+                border: none;
+                border-radius: 18px;
+                padding: 13px 37px;
+                font-size: 18px;
+                font-weight: 600;
+                box-shadow: 0 2px 7px var(--button);
+                margin-bottom: 38px;
+            }
+
+            .heading .head input:hover{
+                cursor: pointer;
+                background: #6f2b25;
+                color: white;
+                box-shadow: 0 2px 7px var(--text);
+                transition: .7s ease-in-out;
+            }
+
+            .heading .head .para{
+                font-size: 30px;
+                margin: 0px 120px;
+            }
+
+            .heading .head,
+            .heading .head input {
+                transition: opacity 0.2s ease-out;
+            }
+
+            /* .heading .circle1,
+            .heading .circle2{
+                transition: opacity 0.05s ease-out;
+            } */
+
+            /* Add a class to apply opacity 0 for hiding */
+            .heading .hidden {
+                opacity: 0;
+            }
+
+            .heading ion-icon{
+                position: absolute;
+                top: 2%;
+                left: 2%;
+                font-size: 30px;
+            }
+
+            .heading ion-icon:hover{
+                cursor: pointer;
+                transform: scale(1.15); 
+                /* box-shadow: 0px 2px 7px var(--shadaw); */
+                transition: transform 0.2s ease;
+            }
+            /*.........................Sign In Container ........................*/
+
+            .sign_in{
+                width: 50%;
+                background-color: var(--backgraound1);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .sign_in h2{
+                color: var(--text);
+                font-size: 32px;
+                padding: 30px;
+            }
+
+            .sign_in input{
+                margin: 20px 0;
+                width: 50%;
+                padding: 17px;
+                border-radius: 50px;
+                border: none;
+                box-shadow: 0 2px 5px var(--shadaw);
+            }
+
+            .sign_in .forget{
+                color: #b5b3b3;
+                margin-left: 24%;
+                transition: .5s ease;
+            }
+
+            .sign_in .forget:hover{
+                cursor: pointer;
+                color: var(--button);
+            }
+
+            .sign_in .or{
+                margin-top: 7%;
+                color: var(--text);
+                font-size: 18px;
+            }
+
+            .sign_in .account{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 10px 0px;
+            }
+
+            .sign_in .account img{
+                width: 90%;
+                height: 30%;
+                background: transparent;
+                background-color: white;
+                border-radius: 50%;
+                padding: 15px;
+                margin-top: 20%;
+                box-shadow: 0px 2px 7px #d2d0d0;
+            }
+
+            .sign_in .account img:hover{
+                transform: scale(1.15); 
+                box-shadow: 0px 2px 7px var(--shadaw);
+                transition: transform 0.2s ease;
+            }
+            .sign_in .account a{
+                margin: 0 30px;
+            }
+
+            .sign_in input[type="submit"]{
+                background: #ca7062;
+                color: #e6d9d0;
+                border: none;
+                border-radius: 18px;
+                padding: 13px 37px;
+                font-size: 18px;
+                font-weight: 600;
+                box-shadow: 0 2px 7px var(--button);
+                position: absolute;
+                bottom: 10%;
+                width: 9%;
+            }
+
+            .sign_in input[type="submit"]:hover{
+                cursor: pointer;
+                background: #6f2b25;
+                color: white;
+                box-shadow: 0 2px 7px var(--text);
+                transition: .7s ease-in-out;
+            }
+
+            .sign_in .Logo{
+                position: absolute;
+                width: 12%;
+                top: 0%;
+                left: 50%;
+            }
+    
+        </style>
+    </head>
+    <!-- Page -->
+    <body>
+        <section>
+            <div class="heading">
+                <ion-icon name="return-up-back-outline" onclick="moveToHome()"></ion-icon>
+                <div class="circle1">
+                    <img src="images/circle2.png" alt="Circle">
+                </div>
+                <!-- Heading -->
+                <div class="head">
+                    <h1 class="heading1" data-aos="fade-in" data-aos-duration="1000">Welcome Back!</h1>
+                    <h5 class="heading1" data-aos="fade-in" data-aos-duration="2000">You don't have an account?</h5>
+                    <input type="submit" value="Sign Up" onclick="moveShape()">
+                    <h3 class="heading1" data-aos="zoom-in" data-aos-duration="2000">Red Sand Event</h3>
+                    <img src="images/Linee.png" alt="Line">
+                    <p class="para" data-aos="fade-right" data-aos-duration="3000">We're excited to have you on board and help you plan, orginize, and manage your events.</p>
+                </div>
+                
+                <div class="circle2">
+                    <img src="images/circle4.png" alt="Circle">
+                </div>
+            </div>
+            <!-- Sign In Container -->
+            <div class="sign_in">
+                <img src="images/Logo.png" alt="Logo" class="Logo" data-aos="zoom-in" data-aos-duration="2000">
+                <h2 data-aos="zoom-in" data-aos-duration="3000">Login Account</h2>
+                <input type="email" id="email" name="email" placeholder="Email" required data-aos="zoom-in" data-aos-duration="2000"> <!-- Email -->
+                <input type="password" id="password" name="password" placeholder="Password" required data-aos="zoom-in" data-aos-duration="3000"> <!-- Password -->
+                <!-- <input type="submit" value="Log In"> Log In -->
+                <p class="forget" data-aos="fade-right" data-aos-duration="3000">Forget Password?</p> 
+                <p class="or" data-aos="zoom-in" data-aos-duration="3000">______________ or login with ______________</p>
+                <div class="account">
+                    <a href="https://www.twitter.com" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
+                        <img src="images/twitter1.png" alt="Twitter" class="twitter">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="images/facebook1.png" alt="Facebook" class="facebook">
+                    </a>
+                    <a href="https://www.google.com" target="_blank" data-aos="zoom-in" data-aos-duration="3000">
+                        <img src="images/google.png" alt="Google" class="google">
+                    </a>
+                </div>
+                <input type="submit" value="Log In" data-aos="fade-in" data-aos-duration="3000">
+                <!-- <button type="submit">Log In</button> -->
+            </div>
+        </section>
+    </body>
+    
+        <!-- Move Shape -->
+        <script>
+            function moveShape() {
+            document.querySelector('.heading input').addEventListener('click', function() {
+                const circle1 = document.querySelector('.circle1');
+                const circle2 = document.querySelector('.circle2');
+                const head = document.querySelector('.head');
+                const input = document.querySelector('.heading input');
+                const icon = document.querySelector('.heading ion-icon');
+
+
+                // Add the 'hidden' class to the elements
+                circle1.classList.add('hidden');
+                circle2.classList.add('hidden');
+                head.classList.add('hidden');
+                input.classList.add('hidden');
+                icon.classList.add('hidden');
+
+
+                const shapeElement = document.querySelector('.heading');
+                shapeElement.classList.add('move-to-right');
+                // Now, navigate to the target page after a delay
+                setTimeout(function () {
+                    window.location.href = "signUp.html"; // Replace with your target page's name
+                }, 1000); // 2000ms = 2 seconds delay
+            });
+        }
+        </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- AOS -->
+        <script> 
+            AOS.init();
+        </script>
+        <!-- ICONS -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+        <!-- Move to Home -->
+        <script>
+            function moveToHome(){
+                setTimeout(function () {
+                    window.location.href = "ttt.html"; // Replace with your target page's name
+                }, 1000);
+            }
+        </script>
+</html>

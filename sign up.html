@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;            display: flex;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -23,7 +24,7 @@
             font-size: 30px;
             position: absolute;
             top: 30%;
-            right: 12%;
+            right: 14%;
 
 
         }
@@ -33,7 +34,7 @@
             font-size: 20px;
             position: absolute;
             top: 50%;
-            right: 16%;
+            right: 17%;
 
 
         }
@@ -43,9 +44,7 @@
             color: #c0c0c0;
             font-size: 10px;
             top: 83%;
-            right: 69%;
-
-
+            right: 67.5%;
         }
 
         .txt2 h2 {
@@ -61,24 +60,24 @@
         }
 
         .s1 input[type="submit"] {
-            width: 15%;
-            padding: 10px;
+            width: 13%;
+            padding: 15px;
             position: absolute;
             top: 58%;
-            right: 15%;
-            background: #e6d9d0;
-            color: #ca7062;
+            right: 15.8%;
+            background: #ca7062;
+            color: #e6d9d0;
+            font-size: 18px;
+            font-weight: 600;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
-            border: 3px solid #ca7062;
-
         }
 
         .s1 input[type="submit"]:hover {
-            background: #f0e8e2;
-            color: #f0e8e2;
-            border: 3px solid #f0e8e2;
+            background: #6f2b25;
+            color: white;
+            transition: .7s ease;
         }
 
         .c1 {
@@ -86,14 +85,12 @@
             display: block;
             position: absolute;
             top: 93%;
-            right: 80%;
+            right: 83%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
-
-
+            /* background: #e6d9d0;
+            border-radius: 50%; */
         }
 
         .c2 {
@@ -101,13 +98,12 @@
             display: block;
             position: absolute;
             top: 93%;
-            right: 73.75%;
+            right: 70.75%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
-
+            /* background: #e6d9d0;
+            border-radius: 50%; */
         }
 
         .c3 {
@@ -115,12 +111,12 @@
             display: block;
             position: absolute;
             top: 93%;
-            right: 67%;
+            right: 60%;
             transform: translate(-50%, -50%);
             width: 35px;
             height: 35px;
-            background: #e6d9d0;
-            border-radius: 50%;
+            /* background: #e6d9d0;
+            border-radius: 50%; */
 
         }
 
@@ -171,6 +167,7 @@
         .signin-container h1 {
             left: 40%;
             top: 50%;
+            margin-left: 8%;
             text-align: center;
             color: #6f2b25;
         }
@@ -210,20 +207,24 @@
         }
 
         .signin-container input[type="submit"] {
-            width: 40%;
-            padding: 10px;
+            width: 38%;
+            padding: 15px;
             position: relative;
-            left: 35%;
+            left: 35.2%;
             background: #ca7062;
-            color: #fff;
+            color: #e6d9d0;
+            font-size: 18px;
+            font-weight: 600;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
         }
 
 
         .signin-container input[type="submit"]:hover {
-            background: #e6d9d0;
+            background: #6f2b25;
+            color: white;
+            transition: .7s ease;
         }
 
         .forgot-password {
@@ -253,10 +254,10 @@
 <img src="images/circle2.png" class="img1">
 <img src="images/circle2.png" class="img2">
 </div>
-<div class="txt1">
+<div class="txt1" data-aos="fade-left" data-aos-duration="3000">
     <h1>Welcome !</h1>
 </div>
-<div class="txt11">
+<div class="txt11" data-aos="zoom-in" data-aos-duration="3000">
     <h11>Already A Member?</h11>
 </div>
 
@@ -318,7 +319,12 @@
             }, 900); 
         }
     </script>
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+    <script> 
+        AOS.init();
+    </script>
 
     <div class="signin-container">
         <h1>Sign Up</h1>
