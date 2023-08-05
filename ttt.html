@@ -9,7 +9,7 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
         <link rel="stylesheet" href="style.css">
-
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     </head>
     <body>
         <!-- Navigation -->
@@ -187,7 +187,7 @@
                 <h1 class="heading">Categories</h1>
                 
                 <div class="row">
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="health" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="heart-half-outline"></ion-icon> -->
@@ -195,7 +195,7 @@
                             <label for="health">Health & Wellness</label>
                         </div>
                     </div>
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="education" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="library-outline"></ion-icon> -->
@@ -203,7 +203,7 @@
                             <label for="education">Education & Training</label>
                         </div>
                     </div>
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="business" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="business-outline"></ion-icon> -->
@@ -211,7 +211,7 @@
                             <label for="business">Business & strategy</label>
                         </div>
                     </div>
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="arts" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="pencil-outline"></ion-icon> -->
@@ -222,7 +222,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="science" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="search-outline"></ion-icon> -->
@@ -230,7 +230,7 @@
                             <label for="science">Science & Research</label>
                         </div>
                     </div>
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="industry" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="build-outline"></ion-icon> -->
@@ -238,7 +238,7 @@
                             <label for="industry">Industrial Engineering</label>
                         </div>
                     </div>
-                    <div class="input">
+                    <div class="input" onclick="moveToCategories()">
                         <input id="sport" type="radio" name="radio">
                         <div class="radio_t">
                             <!-- <ion-icon name="ticket-outline"></ion-icon> -->
@@ -636,19 +636,55 @@
                 <div class="cross">
                     <div class="arow">
     
-                        <button class="left"><</button>
-                        <div class="bt-group">
-                            <!-- <div class="bt bt-left" onclick="leftCb()">ToLeft</div>
-                            <div class="bt bt-right" onclick="rightCb()">ToRight</div>  -->
-                          </div>
-                          <div class="con">
-                            <div class="swiper s1">Slide 1</div>
-                            <div class="swiper s2">Slide 2</div>
-                            <div class="swiper s3">Slide 3</div>
-                            <div class="swiper s4">Slide 4</div>
-                            <div class="swiper s5">Slide 5</div>
-                          </div>
-                        <button class="right">></button>
+                        <input type="radio" name="slider" id="s1">
+                        <input type="radio" name="slider" id="s2">
+                        <input type="radio" name="slider" id="s3" checked>
+                        <input type="radio" name="slider" id="s4">
+                        <input type="radio" name="slider" id="s5">
+
+                        <label for="s1" id="slider1" class="sli">
+                            <img src="images/building.png" height="100%" width="100%">
+                        </label>
+                        <label for="s2" id="slider2" class="sli">
+                            <img src="images/art.png" height="100%" width="100%">
+                        </label>
+                        <label for="s3" id="slider3" class="sli">
+                            <img src="images/date.png" height="100%" width="100%">
+                        </label>
+                        <label for="s4" id="slider4" class="sli">
+                            <img src="images/email.png" height="100%" width="100%">
+                        </label>
+                        <label for="s5" id="slider5" class="sli">
+                            <img src="images/Expertise.png" height="100%" width="100%">
+                        </label>
+
+                        <!-- <a href="#one" class="speaker_item">
+                            <img src="images/building.png" alt="build">
+                        </a>
+                        <a href="#two" class="speaker_item">
+                            <img src="images/building.png" alt="build">
+                        </a>
+                        <a href="#three" class="speaker_item">
+                            <img src="images/building.png" alt="build">
+                        </a>
+                        <a href="#four" class="speaker_item">
+                            <img src="images/building.png" alt="build">
+                        </a>
+                        <a href="#five" class="speaker_item">
+                            <img src="images/building.png" alt="build">
+                        </a> -->
+                        <!-- <button class="left"><</button> -->
+                        <!-- <div class="speaker">
+                            <div class="speaker_container">
+                                <div class="speaker_item speaker_1" data-index="1"></div>
+                                <div class="speaker_item speaker_2" data-index="2"></div>
+                                <div class="speaker_item speaker_3" data-index="3"></div>
+                                <div class="speaker_item speaker_4" data-index="4"></div>
+                                <div class="speaker_item speaker_5" data-index="5"></div>
+                            </div>
+                        </div>
+                        <div class="controls"></div> -->
+                        <!-- <button class="right">></button> -->
                     </div>
                 </div>
                 <p data-aos="zoom-in-up" data-aos-duration="3000" class="text">Get in touch with us<br> 
@@ -855,99 +891,91 @@
         </script>
         <!-- Swiper Circular -->
         <script>
-            // const s1 = document.querySelector('.s1')
-            // const s2 = document.querySelector('.s2')
-            // const s3 = document.querySelector('.s3')
-            // const s4 = document.querySelector('.s4')
-            // const s5 = document.querySelector('.s5')
+            // <div class="speaker">
+                // <div class="speaker_container">
+                //                 <div class="speaker_item speaker_1" data-index="1"></div>
+                //                 <div class="speaker_item speaker_2" data-index="2"></div>
+                //                 <div class="speaker_item speaker_3" data-index="3"></div>
+                //                 <div class="speaker_item speaker_4" data-index="4"></div>
+                //                 <div class="speaker_item speaker_5" data-index="5"></div>
+                //             </div>
+                //         </div>
+                //         <div class="controls"></div>
 
-            // const swiperOrderList = [s1, s2, s3, s4, s5]
-            // const swiperClassList = [
-            //     'swiper-1',
-            //     'swiper-2',
-            //     'swiper-3',
-            //     'swiper-4',
-            //     'swiper-5',
-            // ]
+            const speakerContainer = document.querySelector('.speaker_container');
+            const speakerControlsContainer = document.querySelector('.controls');
+            const speakerControls = ['pervious', 'next'];
+            const speakerItems = document.querySelectorAll('.speaker_item');
 
-            // this function is from
-            // https://juejin.cn/post/6973541673196322847
-            function handleTouchDir({ container, leftCb, rightCb }) {
-                let box = document.querySelector(container)
-                let startTime = '' 
-                let startDistanceX = '' 
-                let startDistanceY = '' 
-                let endTime = '' 
-                let endDistanceX = '' 
-                let endDistanceY = '' 
-                let moveTime = '' 
-                let moveDistanceX = '' 
-                let moveDistanceY = '' 
-                box.addEventListener('touchstart', (e) => {
-                startTime = new Date().getTime()
-                startDistanceX = e.touches[0].screenX
-                startDistanceY = e.touches[0].screenY
-                })
-                box.addEventListener('touchend', (e) => {
-                endTime = new Date().getTime()
-                endDistanceX = e.changedTouches[0].screenX
-                endDistanceY = e.changedTouches[0].screenY
-                moveTime = endTime - startTime
-                moveDistanceX = startDistanceX - endDistanceX
-                moveDistanceY = startDistanceY - endDistanceY
-                
-                if (
-                    (Math.abs(moveDistanceX) > 40 || Math.abs(moveDistanceY) > 40) &&
-                    moveTime < 500
-                ) {
-                    
-                    if (Math.abs(moveDistanceX) > Math.abs(moveDistanceY)) {
-                    // return moveDistanceX > 0 ? 'left' : 'right'
-                    if (moveDistanceX > 0) {
-                        leftCb()
-                    } else {
-                        rightCb()
-                    }
-                    } else {
-                    // return moveDistanceY > 0 ? 'up' : 'down'
-                    }
+            class Carousel{
+                constructor(container, items, controls){
+                    this.carouselContainer = container;
+                    this.carouselControls = controls;
+                    this.carouselArray = [...items];
                 }
-                })
+
+                updateSpeaker(){
+                    this.carouselArray.forEach(el =>{
+                        el.classList.remove('speaker_1');
+                        el.classList.remove('speaker_2');
+                        el.classList.remove('speaker_3');
+                        el.classList.remove('speaker_4');
+                        el.classList.remove('speaker_5');
+                    });
+
+                    this.carouselArray.slice(0, 5).forEach((el, i) =>{
+                        el.classList.add('speaker_$(i+1)');
+                    });
+                }
+
+
+                setCurrentState(direction){
+                    if(direction.className == 'controls_pervious'){
+                        this.carouselArray.unshift(this.carouselArray.pop());
+                    }else{
+                        this.carouselArray.push(this.carouselArray.shift());
+                    }
+                    this.updateSpeaker();
+                }
+
+                setControls(){
+                    this.carouselControls.forEach(control =>{
+                        speakerControlsContainer.appendChild(document.createElement('button')).className = '.controls_$(control)';
+                        document.querySelector('.controls_$(control)').innerText = control;
+                    });
+                }
+
+                useControls(){
+                    const triggers = [...speakerControlsContainer.childNodes];
+                    triggers.forEach(control =>{
+                        control.addEventListener('click', e =>{
+                            e.preventDefault();
+                            this.setCurrentState(control);
+                        });
+                    });
+                }
+
             }
+            const exampleCarousel = new Carousel(speakerContainer, speakerItems, speakerControls);
 
-            swiperOrderList.forEach((swiper, i) => {
-                swiper.classList.add(swiperClassList[i])
-            })
-
-            // function leftCb() {
-            //     console.log('left')
-            //     const s = swiperOrderList.shift()
-            //     swiperOrderList.push(s)
-            //     swiperOrderList.forEach((swiper, i) => {
-            //     swiperClassList.forEach((c) => {
-            //         swiper.classList.remove(c)
-            //     })
-            //     swiper.classList.add(swiperClassList[i])
-            //     })
-            // }
-
-            // function rightCb() {
-            //     console.log('right')
-            //     const s = swiperOrderList.pop()
-            //     swiperOrderList.unshift(s)
-            //     swiperOrderList.forEach((swiper, i) => {
-            //     swiperClassList.forEach((c) => {
-            //         swiper.classList.remove(c)
-            //     })
-            //     swiper.classList.add(swiperClassList[i])
-            //     })
-            // }
-
-            // handleTouchDir({
-            //     container: '.con',
-            //     leftCb,
-            //     rightCb,
-            // })
+            exampleCarousel.setControls();
+            exampleCarousel.useControls();
         </script>
+        <!-- Categories -->
+        <script>
+            function moveToCategories(){
+                window.location.href = "categories.html";
+            }
+        </script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+        <!-- <script type="text/javascript">
+            $(document).ready(function(){
+                $('.arow').Carousel({
+                    indicators: true
+
+                });
+            });
+        </script> -->
     </body>
 </html>

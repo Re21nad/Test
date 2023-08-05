@@ -84,29 +84,27 @@
             }
 
             .heading .head .heading1{
-                margin: 30px 0px;
+                margin: 20px 0px;
             }
 
             /*..............................Button ......................*/
 
             .heading .head input{
-                background: #ca7062;
-                color: #e6d9d0;
+                /* background: #ca7062; */
+                background: none;
+                color: #b5b3b3;
                 border: none;
                 border-radius: 18px;
-                padding: 13px 37px;
+                margin: 10px 30px;
                 font-size: 18px;
                 font-weight: 600;
-                box-shadow: 0 2px 7px var(--button);
                 margin-bottom: 38px;
             }
 
             .heading .head input:hover{
                 cursor: pointer;
-                background: #6f2b25;
-                color: white;
-                box-shadow: 0 2px 7px var(--text);
-                transition: .7s ease-in-out;
+                color: var(--text);
+                transition: .4s ease-in-out;
             }
 
             .heading .head .para{
@@ -117,6 +115,17 @@
             .heading .head,
             .heading .head input {
                 transition: opacity 0.2s ease-out;
+            }
+
+            .heading .head1{
+                display: flex;
+                justify-content: center;
+            }
+
+            .heading .head1 .heading11{
+                font-size: 18px;
+                color: var(--button);
+                padding: 10px;
             }
 
             /* .heading .circle1,
@@ -255,8 +264,10 @@
                 <!-- Heading -->
                 <div class="head">
                     <h1 class="heading1" data-aos="fade-in" data-aos-duration="1000">Welcome Back!</h1>
-                    <h5 class="heading1" data-aos="fade-in" data-aos-duration="2000">You don't have an account?</h5>
-                    <input type="submit" value="Sign Up" onclick="moveShape()">
+                    <div class="head1">
+                        <h5 class="heading11" data-aos="fade-right" data-aos-duration="2000">You don't have an account?</h5>
+                        <input type="submit" value="Sign Up" onclick="moveShape()" data-aos="fade-right" data-aos-duration="2000">
+                    </div>
                     <h3 class="heading1" data-aos="zoom-in" data-aos-duration="2000">Red Sand Event</h3>
                     <img src="images/Linee.png" alt="Line">
                     <p class="para" data-aos="fade-right" data-aos-duration="3000">We're excited to have you on board and help you plan, orginize, and manage your events.</p>
@@ -291,7 +302,6 @@
             </div>
         </section>
     </body>
-    
         <!-- Move Shape -->
         <script>
             function moveShape() {

@@ -269,6 +269,11 @@ border-color: #007bff;
     padding-bottom: 80px;
 }
 
+.Health_Wellness .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
 .Health_Wellness .swiper-slide .row{
     display: flex;
     flex-direction: row;
@@ -362,6 +367,11 @@ border-color: #007bff;
     padding-bottom: 80px;
 }
 
+.Education_Training .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
 .Education_Training .swiper-slide .row{
     display: flex;
     flex-direction: row;
@@ -453,6 +463,11 @@ border-color: #007bff;
     font-size: 18px;
     background-color: var(--color);
     padding-bottom: 80px;
+}
+
+.Business_Strategy .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
 }
 
 .Business_Strategy .swiper-slide .row{
@@ -549,6 +564,11 @@ border-color: #007bff;
     padding-bottom: 80px;
 }
 
+.Arts_Craft .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
 .Arts_Craft .swiper-slide .row{
     display: flex;
     flex-direction: row;
@@ -643,6 +663,11 @@ border-color: #007bff;
     padding-bottom: 80px;
 }
 
+.Science_Research .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
 .Science_Research .swiper-slide .row{
     display: flex;
     flex-direction: row;
@@ -735,6 +760,11 @@ border-color: #007bff;
     font-size: 18px;
     background-color: var(--color);
     padding-bottom: 80px;
+}
+
+.Industrial_Engineering .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
 }
 
 .Industrial_Engineering .swiper-slide .row{
@@ -832,6 +862,11 @@ border-color: #007bff;
     padding-bottom: 80px;
 }
 
+.Sports_Travel .swiper-slide .col:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 7px var(--shadaw);
+}
+
 .Sports_Travel .swiper-slide .row{
     display: flex;
     flex-direction: row;
@@ -875,128 +910,7 @@ border-color: #007bff;
 
 /*..........................................*/
 
-/*.................... Description .................*/
-/*................ Circle .................*/
-/* .Description{
-    position: relative;
-    min-height: 140vh;
-    display: flex;
-}
-
-.Description .Circle {
-    transform: rotate(-90deg) translateY(15px); /* Rotate the element 90 degrees clockwise (downward) and move it 15 pixels down */
-    /* position: absolute;
-    left: -3%;
-    top: 40%;
-}
-
-.Description .Circle img{
-    width: 150%;
-}
-
-.Description .circle2 img{
-    position: absolute;
-    right: 0%;
-    width: 70px;
-    top: 60%;
-} */ 
-
-/*....................... Heading ..................*/
-
-/* .Description .heading{
-    margin-left: 30px;
-    width: 240px;
-    height: 50%;
-    padding: 10px;
-    background-color: #d7cbc2;
-    z-index: 1;
-    margin-top: 32%;
-} */
-  
-/*..................Information ...................*/
-/* .Description .text_description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .Description .text_description .dates{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.Description .text_description .dates .time .dot_circle{
-    width: 10%;
-    left: 35.5%;
-    position: absolute;
-}
-
-.Description .text_description .dates .time .dot_circle1{
-    width: 10%;
-    left: 49%;
-    position: absolute;
-}
-
-.Description .text_description .dates .time .dot_circle2{
-    width: 10%;
-    left: 62.5%;
-    position: absolute;
-}
-
-.Description .text_description .dates .time .dot_circle3{
-    width: 10%;
-    left: 76%;
-    position: absolute;
-}
-
-.Description .text_description .dates .time .info{
-    font-size: 30px;
-    color: var(--text);
-}
-
-.Description .text_description .dates .time .info .day{
-    z-index: 1;
-    position: absolute;
-    left: 40%;
-    top: 34%;
-}
-
-.Description .text_description .dates .time .info .hr{
-    z-index: 1;
-    position: absolute;
-    left: 53%;
-    top: 34%;
-}
-
-.Description .text_description .dates .time .info .min{
-    z-index: 1;
-    position: absolute;
-    left: 66%;
-    top: 34%;
-}
-
-.Description .text_description .dates .time .info .sec{
-    z-index: 1;
-    position: absolute;
-    left: 79.5%;
-    top: 34%;
-}
-
-.Description .text_description .text{
-    font-size: 20px;
-    color: var(--text);
-    margin-top: 30%;
-    margin-left: 100%;
-    width: 150%;
-}
-
-.Description .text_description .text p{
-    align-items: center;
-    display: flex;
-} */
+/*.................... More Information .................*/
 
 .more{
     min-height: 100vh;
