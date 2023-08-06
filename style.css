@@ -1461,12 +1461,11 @@ header .line img{
     margin-top: 20px;
 }
 
-
 /*...................... Speaker Section ........................*/
 
 .Speakers{
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center; 
     text-align: center;
@@ -1490,6 +1489,21 @@ header .line img{
 
 /*..................... Header ....................*/
 
+.Speakers .head{
+    margin-top: 50px;
+    background-color: #d7cbc2;
+    padding: 10px;
+    text-align: center;
+    width: 13%;
+    margin-bottom: 20px;
+    margin-left: 45%;
+    /* position: absolute; */
+    /* right: 47%; */
+    /* top: -40%;
+    width: 7%;
+    height: 10%; */
+}
+
 /*..................... information ..................*/
 
 .Speakers {
@@ -1503,8 +1517,8 @@ header .line img{
 .Speakers .swiper-slide {
     display: flex; 
     flex-direction: column;
-    width: 490px;
-    height: 400px;
+    width: 450px;
+    height: 330px;
     background-color: var(--color);
     border-radius: 20px;
 }
@@ -1534,38 +1548,43 @@ header .line img{
     color: var(--text);
     font-size: 18px;
     font-weight: 600;
-    margin: 20px 20px;
+    margin: 0px 20px;
 }
 
 
 .Speakers .swiper-slide .text .ttt img{
-    width: 10%;
-    height: 55%;
+    width: 7%;
+    height: 50%;
     margin: 20px;
 }
 
-/* .Speakers .speaker_container{
-    width: 100%;
-    /* height: 100%; */
-    /* background-color: #fff8f3;
-    padding: 150px 14%;
-    display: flex;
+/* ..................... Buttons ....................*/
+
+.Speakers .swiper .swiper-button-next,
+.Speakers .swiper .swiper-button-prev{
+    padding: 30px 30px;
+    background-color: #CA7062;
+    color: #DDC5B2;
+    border: none;
+    border-radius: 70px;
+    transition: .6s ease;
+    position: absolute;
 }
 
-.Speakers .speaker_container .speaker-slide{
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 25%;
-    padding: 10px 0;
-    background-color: #fff8f3;
-    border: 1px solid black;
-    border-radius: 20px;
+.Speakers .swiper .swiper-button-next{
+    right: 10%;
 }
 
-.Speakers .speaker_container .speaker-slide-active{
-    filter: blur(0);
-} */ 
+.Speakers .swiper .swiper-button-prev{
+    left: 10%;
+}
+
+.Speakers .swiper .swiper-button-next:hover,
+.Speakers .swiper .swiper-button-prev:hover{
+    cursor: pointer;
+    background-color: #6F2B25;
+    color: #fff8f3;
+}
 
 /*....................... Help Us .......................*/
 
@@ -1580,16 +1599,18 @@ header .line img{
     transform: scale(.7);
     transition: 4s; */
 }
-
+/* 
 .Speakers.show-animate .text{
     opacity: 1;
     filter: blur(0px);
     transform: scale(1);
-}
+} */
 
 /*..........................Account ......................*/
-
-.Speakers .contact{
+.Speakers .information{
+    margin-top: 15%;
+}
+.Speakers .information .contact{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -1599,55 +1620,55 @@ header .line img{
     opacity: 0;
     transition: 3.5s;
     filter: blur(5px); */
-    z-index: 1;
+    z-index: 1; 
 }
 
-.Speakers.show-animate .contact{
+/* .Speakers.show-animate .contact{
     opacity: 1;
     filter: blur(0);
     transform: scale(1);
-}
+} */
 
-.Speakers .contact .C_1{
+.Speakers .information .contact .C_1{
     background-color: var(--backgraound);
     padding: 20px 40px;
     margin-right: 60px;
-    margin-bottom: 50%;
+    margin-bottom: 27%;
     border-radius: 20px;
 }
 
-.Speakers .contact .C_1:hover{
+.Speakers .information .contact .C_1:hover{
     transform: scale(1.1); /* Increase the value to scale the image further */
     box-shadow: 0px 2px 7px var(--shadaw);
     transition: transform 0.4s ease; /* Add a transition for smooth scaling effect */
 }
 
-.Speakers .contact .C_2{
+.Speakers .information .contact .C_2{
     background-color: var(--backgraound);
     padding: 20px 20px;
     border-radius: 20px;
-    margin-bottom: 50%;
+    margin-bottom: 27%;
 }
 
-.Speakers .contact .C_2:hover{
+.Speakers .information .contact .C_2:hover{
     transform: scale(1.1); /* Increase the value to scale the image further */
     box-shadow: 0px 2px 7px var(--shadaw);
     transition: transform 0.4s ease; /* Add a transition for smooth scaling effect */
 }
 
-.Speakers .contact .C_1 h4{
+.Speakers .information .contact .C_1 h4{
     color: #6F2B25;
 }
 
-.Speakers .contact .C_2 h4{
+.Speakers .information .contact .C_2 h4{
     color: #6F2B25;
 }
 
-.Speakers .contact .C_1 .C_12{
+.Speakers .information .contact .C_1 .C_12{
     color: #CA7062;
 }
 
-.Speakers .contact .C_2 .C_22{
+.Speakers .information .contact .C_2 .C_22{
     color: #CA7062;
 }
 
@@ -1659,6 +1680,7 @@ header .line img{
     /* top: 20%; */
     position: absolute;
     margin-left: 13px;
+    z-index: 0;
 }
 
 .Speakers .Circle img{
