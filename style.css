@@ -1516,7 +1516,7 @@ header .line img{
     padding: 10px;
     text-align: center;
     width: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /* margin-left: 45%; */
     /* position: absolute;
     right: 47%;
@@ -1532,15 +1532,15 @@ header .line img{
 }
 
 .Speakers .swiper {
-    width: 100%;
+    width: 75%;
     margin: 10% 10%;
 }
 
 .Speakers .swiper-slide {
     display: flex; 
     flex-direction: column;
-    width: 40%;
-    height: 370px; /* Adjust the height as needed */
+    width: 43%;
+    height: 350px; /* Adjust the height as needed */
     margin: 0 auto;
     background-color: var(--color);
     border-radius: 40px;
@@ -1593,10 +1593,16 @@ header .line img{
     margin: 20px;
 }
 
+.Speakers .swiper-slide .text .ttt img:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 /* ..................... Buttons ....................*/
 
-.Speakers .swiper .swiper-button-next,
-.Speakers .swiper .swiper-button-prev{
+.Speakers .swiper-button-next,
+.Speakers .swiper-button-prev{
     padding: 30px 30px;
     background-color: #CA7062;
     color: #DDC5B2;
@@ -1606,16 +1612,18 @@ header .line img{
     position: absolute;
 }
 
-.Speakers .swiper .swiper-button-next{
-    right: 20%;
+.Speakers .swiper-button-next{
+    right: 7%;
+    top: 22%;
 }
 
-.Speakers .swiper .swiper-button-prev{
-    left: 20%;
+.Speakers .swiper-button-prev{
+    left: 7%;
+    top: 22%;
 }
 
-.Speakers .swiper .swiper-button-next:hover,
-.Speakers .swiper .swiper-button-prev:hover{
+.Speakers .swiper-button-next:hover,
+.Speakers .swiper-button-prev:hover{
     cursor: pointer;
     background-color: #6F2B25;
     color: #fff8f3;
