@@ -359,7 +359,7 @@ header .line img{
 
 .AboutUs .about_information .GS .text{
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 7px;
     font-weight: 500;
     margin-left: 5%;
     color: var(--text);
@@ -449,21 +449,21 @@ header .line img{
     position: absolute;
     width: 10%;
     right: 26.4%;
-    top: 30%;
+    top: 32%;
 }
 
 .AboutUs .about_information .Linee2{
     position: absolute;
     width: 10%;
     right: 18%;
-    top: 55%;
+    top: 57%;
 }
 
 .AboutUs .about_information .Linee3{
     position: absolute;
     width: 10%;
     right: 26.4%;
-    bottom: 18%;
+    bottom: 16.5%;
 }
 
 .AboutUs .about_information .Line_new{
@@ -503,10 +503,10 @@ header .line img{
 
 .Why_Us .circle1 img{
     width: 120px;
-    transform: translateX(-20%);
+    /* transform: translateX(-20%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Why_Us.show-animate .circle1 img{
@@ -522,10 +522,10 @@ header .line img{
     padding: 10px;
     background-color: #d7cbc2;
     width: 13%;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 2.5s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Why_Us.show-animate .heading{
@@ -554,10 +554,10 @@ header .line img{
 
 .Why_Us .Why_Info .Why_a .Info img{
     width: 50px;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Why_Us.show-animate .Why_Info .Why_a .Info img{
@@ -569,10 +569,10 @@ header .line img{
 .Why_Us .Why_Info .Why_a h3{
     padding: 20px 0px;
     text-align: center;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 2.7s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Why_Us.show-animate .Why_Info .Why_a h3{
@@ -582,10 +582,10 @@ header .line img{
 }
 
 .Why_Us .Why_Info .Why_a p{
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 3s;
-    filter: blur(5px);
+    filter: blur(5px); */
     text-align: center;
 }
 
