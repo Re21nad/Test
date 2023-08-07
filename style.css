@@ -224,10 +224,10 @@ header .line img{
 
 .AboutUs .circle img{
     width: 100px;
-    transform: translateX(-20%);
+    /* transform: translateX(-20%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .AboutUs.show-animate .circle img{
@@ -240,10 +240,10 @@ header .line img{
 
 .AboutUs .head{
     margin-top: 10%;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 2s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .AboutUs.show-animate .head{
@@ -265,10 +265,10 @@ header .line img{
     margin-top: 30px;
     color: var(--text);
     margin-left: 25px;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%);
     opacity: 0;
     transition: 2.5s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .AboutUs.show-animate .head .info{
@@ -303,7 +303,7 @@ header .line img{
 
 /*................................*/
 
-.AboutUs .about_information .GS{
+/* .AboutUs .about_information .GS{
     transform: translateX(-100%);
     opacity: 0;
     transition: 3s;
@@ -314,13 +314,13 @@ header .line img{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .AboutUs .about_information .GS .GS_1{
     display: flex;
 }
 
-.AboutUs .about_information .GS_{
+/* .AboutUs .about_information .GS_{
     transform: translateX(-100%);
     opacity: 0;
     transition: 3.5s;
@@ -331,7 +331,7 @@ header .line img{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .AboutUs .about_information .GS_ .GS_2{
     display: flex;
@@ -365,7 +365,7 @@ header .line img{
     color: var(--text);
 }
 
-.AboutUs .about_information .GS{
+/* .AboutUs .about_information .GS{
     transform: translateX(-100%);
     opacity: 0;
     transition: 3s;
@@ -376,7 +376,7 @@ header .line img{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .AboutUs .about_information .GS .GS_1{
     display: flex;
@@ -388,7 +388,7 @@ header .line img{
     transition: transform 0.3s ease;
 }
 
-.AboutUs .about_information .GS_{
+/* .AboutUs .about_information .GS_{
     transform: translateX(-100%);
     opacity: 0;
     transition: 3.5s;
@@ -399,7 +399,7 @@ header .line img{
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-}
+} */
 
 .AboutUs .about_information .GS_ .GS_2{
     display: flex;
@@ -655,10 +655,10 @@ header .line img{
     align-items: center;
     width: 15%;
     display: flex;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 2.5s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Categories.show-animate .heading{
@@ -679,10 +679,10 @@ header .line img{
 .Categories .row .input{
     position: relative;
     margin-top: 2%;
-    transform: scale(.7);
+    /* transform: scale(.7);
     opacity: 0;
     transition: 3s;
-    filter: blur(5px);
+    filter: blur(5px); */
 }
 
 .Categories.show-animate .row .input{
@@ -1474,10 +1474,21 @@ header .line img{
 }
 
 /*................. Circle .................*/
+
 .Speakers .circle img{
     position: absolute;
     width: 100px;
     left: 0;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px);
+}
+
+.Speakers.show-animate .circle img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
 }
 
 .Speakers .circle2 img{
@@ -1485,22 +1496,32 @@ header .line img{
     right: 0;
     width: 90px;
     margin-top: 30%;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: 2s;
+    filter: blur(5px);
+}
+
+.Speakers.show-animate .circle2 img{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
 }
 
 /*..................... Header ....................*/
 
 .Speakers .head{
-    margin-top: 50px;
+    margin-top: 40px;
     background-color: #d7cbc2;
     padding: 10px;
     text-align: center;
-    width: 13%;
-    margin-bottom: 20px;
-    margin-left: 45%;
-    /* position: absolute; */
-    /* right: 47%; */
-    /* top: -40%;
-    width: 7%;
+    width: auto;
+    margin-bottom: 15px;
+    /* margin-left: 45%; */
+    /* position: absolute;
+    right: 47%;
+    top: 90%; */
+    /*width: 7%;
     height: 10%; */
 }
 
@@ -1512,15 +1533,29 @@ header .line img{
 
 .Speakers .swiper {
     width: 100%;
+    margin: 10% 10%;
 }
 
 .Speakers .swiper-slide {
     display: flex; 
     flex-direction: column;
-    width: 450px;
-    height: 330px;
+    width: 40%;
+    height: 370px; /* Adjust the height as needed */
+    margin: 0 auto;
     background-color: var(--color);
-    border-radius: 20px;
+    border-radius: 40px;
+}
+
+.Speakers .swiper-slide:nth-child(3n+1) {
+    background-color: var(--color); /* Example color 1 */
+}
+  
+.Speakers .swiper-slide:nth-child(3n+2) {
+    background-color: #f6dac4; /* Example color 2 */
+}
+  
+.Speakers .swiper-slide:nth-child(3n) {
+    background-color: #d7cbc2; /* Example color 3 */
 }
 
 .Speakers .swiper-slide .text{
@@ -1539,16 +1574,16 @@ header .line img{
 
 .Speakers .swiper-slide .text .spe{
     color: var(--text);
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 600;
     margin: 20px 0;
 }
 
 .Speakers .swiper-slide .text .spe1{
     color: var(--text);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 0px 20px;
+    margin: 0px 30px;
 }
 
 
@@ -1572,11 +1607,11 @@ header .line img{
 }
 
 .Speakers .swiper .swiper-button-next{
-    right: 10%;
+    right: 20%;
 }
 
 .Speakers .swiper .swiper-button-prev{
-    left: 10%;
+    left: 20%;
 }
 
 .Speakers .swiper .swiper-button-next:hover,
