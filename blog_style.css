@@ -34,7 +34,8 @@ header{
     top: 0;
     padding: 38px 90px;
     z-index: 1000;
-    background-color: var(--backgraound);
+    background-color: #f6eae2;
+    box-shadow: 0 2px 9px #999999;
 }
 
 header .navigation1 a{
@@ -71,7 +72,7 @@ header .line img{
 .Main_Section{
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--backgraound);
+    background-color: #f6eae2;
 }
 
 /*................... Main headers ......................*/
@@ -144,6 +145,9 @@ header .line img{
 
 /*....................... Organizers .................*/
 
+.organizers{
+    background-color: #f8f8f8;
+}
 .organizers .col{
     display: flex;
     position: relative;
@@ -159,6 +163,7 @@ header .line img{
 /*..................... Clibs .................*/
 
 .clips {
+    margin-top: 5%;
     display: flex;
     justify-content: center; /* Center the .heading horizontally */
 }

@@ -178,19 +178,29 @@
                 box-shadow: 0 2px 5px var(--shadaw);
             }
 
-            .sign_in .forget{
+            .sign_in .f input{
                 color: #b5b3b3;
-                margin-left: 24%;
+                margin-left: 30%;
                 transition: .5s ease;
+                background-color: transparent;
+                border: none;
+                box-shadow: none;
+                width: 250%;
+                margin: 5px 0;
+                /* position: absolute;
+                z-index: 1;
+                top: 43%;
+                right: 0%;
+                left: 7%; */
             }
 
-            .sign_in .forget:hover{
+            .sign_in .f input:hover{
                 cursor: pointer;
                 color: var(--button);
             }
 
             .sign_in .or{
-                margin-top: 7%;
+                margin-top: 2%;
                 color: var(--text);
                 font-size: 18px;
             }
@@ -222,7 +232,7 @@
                 margin: 0 30px;
             }
 
-            .sign_in input[type="submit"]{
+            .sign_in .submit{
                 background: #ca7062;
                 color: #e6d9d0;
                 border: none;
@@ -236,7 +246,7 @@
                 width: 9%;
             }
 
-            .sign_in input[type="submit"]:hover{
+            .sign_in .submit:hover{
                 cursor: pointer;
                 background: #6f2b25;
                 color: white;
@@ -284,7 +294,10 @@
                 <input type="email" id="email" name="email" placeholder="Email" required data-aos="zoom-in" data-aos-duration="2000"> <!-- Email -->
                 <input type="password" id="password" name="password" placeholder="Password" required data-aos="zoom-in" data-aos-duration="3000"> <!-- Password -->
                 <!-- <input type="submit" value="Log In"> Log In -->
-                <p class="forget" data-aos="fade-right" data-aos-duration="3000">Forget Password?</p> 
+                <!-- <p class="forget" data-aos="fade-right" data-aos-duration="3000">Forget Password?</p>  -->
+                <div class="f">                
+                    <input class="forget" type="submit" value="Forget Password?" onclick="moveShape1()" data-aos="fade-right" data-aos-duration="2000">
+                </div>
                 <p class="or" data-aos="zoom-in" data-aos-duration="3000">______________ or login with ______________</p>
                 <div class="account">
                     <a href="https://www.twitter.com" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
@@ -297,7 +310,7 @@
                         <img src="images/google.png" alt="Google" class="google">
                     </a>
                 </div>
-                <input type="submit" value="Log In" data-aos="fade-in" data-aos-duration="3000">
+                <input class="submit" type="submit" value="Log In" data-aos="fade-in" data-aos-duration="3000">
                 <!-- <button type="submit">Log In</button> -->
             </div>
         </section>
@@ -326,6 +339,34 @@
                 // Now, navigate to the target page after a delay
                 setTimeout(function () {
                     window.location.href = "signUp.html"; // Replace with your target page's name
+                }, 1000); // 2000ms = 2 seconds delay
+            });
+        }
+        </script>
+        <!-- Move Shape1 -->
+        <script>
+            function moveShape1() {
+            document.querySelector('.sign_in .forget').addEventListener('click', function() {
+                const circle1 = document.querySelector('.circle1');
+                const circle2 = document.querySelector('.circle2');
+                const head = document.querySelector('.head');
+                const input = document.querySelector('.heading input');
+                const icon = document.querySelector('.heading ion-icon');
+
+
+                // Add the 'hidden' class to the elements
+                circle1.classList.add('hidden');
+                circle2.classList.add('hidden');
+                head.classList.add('hidden');
+                input.classList.add('hidden');
+                icon.classList.add('hidden');
+
+
+                const shapeElement = document.querySelector('.heading');
+                shapeElement.classList.add('move-to-right');
+                // Now, navigate to the target page after a delay
+                setTimeout(function () {
+                    window.location.href = "forgetpassword.html"; // Replace with your target page's name
                 }, 1000); // 2000ms = 2 seconds delay
             });
         }

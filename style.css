@@ -34,7 +34,8 @@ header{
     top: 0;
     padding: 38px 90px;
     z-index: 1000;
-    background-color: var(--backgraound);
+    background-color: #f6eae2;
+    box-shadow: 0 2px 9px #999999;
 }
 
 header .navigation1 a{
@@ -95,7 +96,7 @@ header .line img{
 .Main_Section{
     width: 100%;
     overflow-x: hidden;
-    background-color: var(--backgraound);
+    background-color: #f6eae2;
 }
 
 /*................... Main headers ......................*/
@@ -137,7 +138,7 @@ header .line img{
     filter: blur(5px);
     padding: 20px 0;
     font-size: 43px;
-    color: var(--backgraound);
+    color: var(--button);
 }
 
 .Home.show-animate .contant h2{
@@ -700,7 +701,7 @@ header .line img{
     height: 200px;
     border: 2px solid var(--border);
     border-radius: 10%;
-    background-color: var(--border);
+    background-color: #e6ccb5;
     transform: .6s ease;
     margin: 0 65px;
     margin-top: 20px;
@@ -1384,7 +1385,7 @@ header .line img{
     align-items: flex-start; 
     border: 3.4px solid #d38478;
     padding: 125px 20px;
-    margin: 35px 70px ;
+    margin: 35px 70px;
     border-radius: 60px;
     box-shadow: 0 2px 7px rgba(160, 158, 158, 0.9);
 }
@@ -1393,7 +1394,7 @@ header .line img{
 .Blog .square .col1:hover{
     transition: .7s ease;
     box-shadow: 3px 5px 5px var(--button);
-    background-color: #e6e1e1;
+    background-color: white;
 }
 
 .Blog .square .col h4,
