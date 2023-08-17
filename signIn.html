@@ -310,7 +310,7 @@
                         <img src="images/google.png" alt="Google" class="google">
                     </a>
                 </div>
-                <input class="submit" type="submit" value="Log In" data-aos="fade-in" data-aos-duration="3000">
+                <input class="submit" id="logIn" type="submit" value="Log In" data-aos="fade-in" data-aos-duration="3000">
                 <!-- <button type="submit">Log In</button> -->
             </div>
         </section>
@@ -387,5 +387,64 @@
                     window.location.href = "ttt.html"; // Replace with your target page's name
                 }, 1000);
             }
+        </script>
+        <!-- Firebase -->
+        <script type="module">
+            import {initializeApp} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+            import {getDatabase, update, ref} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+            import {getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyDBQxVmc2knYDXs92rYv8FEWpPyTjGAXjE",
+                authDomain: "login-website-58b52.firebaseapp.com",
+                projectId: "login-website-58b52",
+                storageBucket: "login-website-58b52.appspot.com",
+                messagingSenderId: "751785140171",
+                appId: "1:751785140171:web:3d34224d6a4f3fa202604e"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const database = getDatabase(app);
+            const auth = getAuth();
+
+            logIn.addEventListener('click',(e) => {
+                var email = document.getElementById('email').value
+                var password = document.getElementById('password').value
+
+                signInWithEmailAndPassword (auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+
+                    // const dt = new Data();
+                    update(ref(database, 'users/' + user.uid),{
+                        // last_login: dt.now(),
+                        // last_login: Data.now() 
+                    })
+                    alert('user loged in!')
+                    // ...
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+
+                    alert(errorMessage);
+                });
+            });
+
+            const user = auth.currentUser;
+
+            onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in, see docs for a list of available properties
+                // https://firebase.google.com/docs/reference/js/auth.user
+                const uid = user.uid;
+                // ...
+            } else {
+                // User is signed out
+                // ...
+            }
+            });
         </script>
 </html>

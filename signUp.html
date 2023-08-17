@@ -224,19 +224,17 @@
                 transition: opacity 0.2s ease-out;
             }
 
-        </style>
-        
+        </style>  
     </head>
     <body>
-
         <section>
             <!-- Sign Up Container -->
             <div class="sign_up_container">
                 <img src="images/Logo.png" alt="Logo" class="Logo" data-aos="zoom-in" data-aos-duration="2000">
                 <h2 data-aos="zoom-in" data-aos-duration="3000">Sign Up</h2>
                 <div class="names" data-aos="zoom-in" data-aos-duration="1000">
-                    <input type="text" id="name" name="name" placeholder="First Name" required>
-                    <input type="text" id="name" name="name" placeholder="Last Name" required>
+                    <input type="text" id="first_name" name="name" placeholder="First Name" required>
+                    <input type="text" id="last_name" name="name" placeholder="Last Name" required>
                 </div>
                 <input type="email" id="email" name="email" placeholder="Email" required data-aos="zoom-in" data-aos-duration="1500">
                 <input type="password" id="password" name="password" placeholder="Password" required data-aos="zoom-in" data-aos-duration="2000">
@@ -253,7 +251,7 @@
                         <img src="images/google.png" alt="Google" class="google">
                     </a>
                 </div>
-                <input type="submit" value="Sign Up" data-aos="fade-in" data-aos-duration="3000">
+                <input type="submit" id="signUp" value="Sign Up" data-aos="fade-in" data-aos-duration="3000" onclick="register()">
                 
             </div>
             <!-- Heading -->
@@ -318,4 +316,58 @@
     <script> 
         AOS.init();
     </script>
+    <!-- Firebase -->
+    <script type="module">
+        import {initializeApp} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import {getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+        import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDBQxVmc2knYDXs92rYv8FEWpPyTjGAXjE",
+            authDomain: "login-website-58b52.firebaseapp.com",
+            projectId: "login-website-58b52",
+            storageBucket: "login-website-58b52.appspot.com",
+            messagingSenderId: "751785140171",
+            appId: "1:751785140171:web:3d34224d6a4f3fa202604e"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+
+        signUp.addEventListener('click',(e) => {
+            var first_name = document.getElementById('first_name').value
+            var last_name = document.getElementById('last_name').value
+            var email = document.getElementById('email').value
+            var password = document.getElementById('password').value
+            var confirm_password = document.getElementById('confirm-password').value
+
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                set(ref(database, 'users/' + user.uid),{
+                    first_name: first_name,
+                    last_name: last_name,
+                    email: email,
+                    // last_login: Data.now() 
+                })
+                alert('user created!')
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+
+                alert(errorMessage);
+                // ..
+            });
+        });
+    </script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js"></script> -->
+    <!-- <script src="signUp.js"></script> -->
 </html>
